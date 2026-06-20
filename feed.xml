@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HustleLedger — Student Survival Guide</title>
+    <link>https://hustleledger.github.io/blog/blog/</link>
+    <description>Smart strategies for the modern university student.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 20 Jun 2026 20:10:49 GMT</lastBuildDate>
+    <atom:link href="https://hustleledger.github.io/blog/blog/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>How to Ace Finals Using Spaced Repetition</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-ace-finals-using-spaced-repetition</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-ace-finals-using-spaced-repetition</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <description>How to Ace Finals Using Spaced Repetition</description>
+      <author>Maya Chen</author>
+            <category>finance</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>The Ultimate Guide to Notion for Students</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-notion-for-students</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-notion-for-students</guid>
+      <pubDate>Thu, 11 Jun 2026 00:00:00 GMT</pubDate>
+      <description>The Ultimate Guide to Notion for Students</description>
+      <author>Dr. Aris Vane</author>
+            <category>the-grind</category>
+      <category>ai</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>5 AI Tools That Actually Help With Research</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/5-ai-tools-that-actually-help-with-research</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/5-ai-tools-that-actually-help-with-research</guid>
+      <pubDate>Wed, 03 Jun 2026 00:00:00 GMT</pubDate>
+      <description>5 AI Tools That Actually Help With Research</description>
+      <author>Jake Morrison</author>
+            <category>productivity</category>
+      <category>career</category>
+      <category>finance</category>
+      <category>data</category>
+    </item>
+    <item>
+      <title>How I Saved $500/Month as a Student</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-i-saved-500-month-as-a-student</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-i-saved-500-month-as-a-student</guid>
+      <pubDate>Wed, 27 May 2026 00:00:00 GMT</pubDate>
+      <description>How I Saved $500/Month as a Student</description>
+      <author>Lena Okafor</author>
+            <category>side-hustle</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>Why You Should Start a Side Hustle in Freshman Year</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-you-should-start-a-side-hustle-in-freshman-year</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-you-should-start-a-side-hustle-in-freshman-year</guid>
+      <pubDate>Wed, 20 May 2026 00:00:00 GMT</pubDate>
+      <description>Why You Should Start a Side Hustle in Freshman Year</description>
+      <author>Ravi Patel</author>
+            <category>study-hacks</category>
+      <category>career</category>
+      <category>the-toolkit</category>
+    </item>
+    <item>
+      <title>Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-ai-policy-lie</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-ai-policy-lie</guid>
+      <pubDate>Mon, 18 May 2026 00:00:00 GMT</pubDate>
+      <description>Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.</description>
+      <author>Jake Morrison</author>
+            <category>The Survival Guide</category>
+      <category>AI</category>
+      <category>Career</category>
+      <category>Productivity</category>
+      <category>Study Hacks</category>
+    </item>
+    <item>
+      <title>Building a Portfolio That Lands Internships</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/building-a-portfolio-that-lands-internships</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/building-a-portfolio-that-lands-internships</guid>
+      <pubDate>Tue, 12 May 2026 00:00:00 GMT</pubDate>
+      <description>Building a Portfolio That Lands Internships</description>
+      <author>Yusuf Adedapo</author>
+            <category>the-toolkit</category>
+      <category>passive-income</category>
+      <category>networking</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>The Pomodoro Technique Actually Works — Here's Why</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-pomodoro-technique-actually-works-here-s-why</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-pomodoro-technique-actually-works-here-s-why</guid>
+      <pubDate>Tue, 05 May 2026 00:00:00 GMT</pubDate>
+      <description>The Pomodoro Technique Actually Works — Here's Why</description>
+      <author>Maya Chen</author>
+            <category>ai</category>
+      <category>the-grind</category>
+    </item>
+    <item>
+      <title>The Student AI Stack: 7 Free Tools That Save 10 Hours a Week</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-student-ai-stack</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-student-ai-stack</guid>
+      <pubDate>Fri, 01 May 2026 00:00:00 GMT</pubDate>
+      <description>Most students are running 8-15 different apps for school. You only need 7, all free, and they integrate into a single pipeline that cuts your weekly study time by 30-40%.</description>
+      <author>Maya Chen</author>
+            <category>The Toolkit</category>
+      <category>AI</category>
+      <category>Productivity</category>
+      <category>Study Hacks</category>
+    </item>
+    <item>
+      <title>How to Network Without Being Awkward</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-network-without-being-awkward</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-network-without-being-awkward</guid>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 GMT</pubDate>
+      <description>How to Network Without Being Awkward</description>
+      <author>Dr. Aris Vane</author>
+            <category>side-hustle</category>
+      <category>data</category>
+      <category>passive-income</category>
+    </item>
+    <item>
+      <title>Freelancing 101: From Zero to First Client</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/freelancing-101-from-zero-to-first-client</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/freelancing-101-from-zero-to-first-client</guid>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Freelancing 101: From Zero to First Client</description>
+      <author>Jake Morrison</author>
+            <category>side-hustle</category>
+      <category>the-toolkit</category>
+      <category>the-survival-guide</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>The $600/Mo Side Hustle: Selling Digital Products as a Student</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/priority-lab-access-hidden-api</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/priority-lab-access-hidden-api</guid>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Sell digital products (study guides, templates, Notion dashboards) on Gumroad or Etsy. Create once, earn $200-$2,000/month passively. No inventory, no shipping, no customer service after setup.</description>
+      <author>Ravi Patel</author>
+            <category>The Grind</category>
+      <category>Side Hustle</category>
+      <category>Passive Income</category>
+      <category>Finance</category>
+    </item>
+    <item>
+      <title>From Lecture to A-Grade: The Complete AI Note-Taking Pipeline</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/cloud-sourced-notetaking-empire</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/cloud-sourced-notetaking-empire</guid>
+      <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.</description>
+      <author>Maya Chen</author>
+            <category>The Survival Guide</category>
+      <category>AI</category>
+      <category>Productivity</category>
+      <category>Study Hacks</category>
+    </item>
+    <item>
+      <title>Why You Need a Second Brain as a Student</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-you-need-a-second-brain-as-a-student</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-you-need-a-second-brain-as-a-student</guid>
+      <pubDate>Mon, 13 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Why You Need a Second Brain as a Student</description>
+      <author>Lena Okafor</author>
+            <category>data</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>How I Automated My Job Applications and Landed 3 Internships</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-after-hours-network</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-after-hours-network</guid>
+      <pubDate>Fri, 10 Apr 2026 00:00:00 GMT</pubDate>
+      <description>Use AI to tailor every application to the specific role, track your pipeline automatically, and practice interviews with voice-based AI. I sent 47 applications, got 12 interviews, and received 3 offers.</description>
+      <author>Lena Okafor</author>
+            <category>The Survival Guide</category>
+      <category>AI</category>
+      <category>Career</category>
+      <category>Networking</category>
+    </item>
+    <item>
+      <title>The Best Part-Time Jobs That Pay Well for Students</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-best-part-time-jobs-that-pay-well-for-students</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-best-part-time-jobs-that-pay-well-for-students</guid>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 GMT</pubDate>
+      <description>The Best Part-Time Jobs That Pay Well for Students</description>
+      <author>Ravi Patel</author>
+            <category>passive-income</category>
+      <category>finance</category>
+      <category>study-hacks</category>
+    </item>
+    <item>
+      <title>How to Write a Resume That Gets Past ATS</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-write-a-resume-that-gets-past-ats</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-write-a-resume-that-gets-past-ats</guid>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 GMT</pubDate>
+      <description>How to Write a Resume That Gets Past ATS</description>
+      <author>Yusuf Adedapo</author>
+            <category>career</category>
+      <category>ai</category>
+      <category>data</category>
+      <category>side-hustle</category>
+    </item>
+    <item>
+      <title>Python for Non-CS Majors: A Practical Guide</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/python-for-non-cs-majors-a-practical-guide</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/python-for-non-cs-majors-a-practical-guide</guid>
+      <pubDate>Sun, 22 Mar 2026 00:00:00 GMT</pubDate>
+      <description>Python for Non-CS Majors: A Practical Guide</description>
+      <author>Maya Chen</author>
+            <category>career</category>
+      <category>research</category>
+    </item>
+    <item>
+      <title>How I Grew My Side Hustle to $2000/Month</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-i-grew-my-side-hustle-to-2000-month</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-i-grew-my-side-hustle-to-2000-month</guid>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 GMT</pubDate>
+      <description>How I Grew My Side Hustle to $2000/Month</description>
+      <author>Dr. Aris Vane</author>
+            <category>networking</category>
+      <category>the-toolkit</category>
+      <category>data</category>
+    </item>
+    <item>
+      <title>The Ultimate Guide to Scholarship Hunting</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-scholarship-hunting</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-scholarship-hunting</guid>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+      <description>The Ultimate Guide to Scholarship Hunting</description>
+      <author>Jake Morrison</author>
+            <category>study-hacks</category>
+      <category>side-hustle</category>
+      <category>networking</category>
+      <category>the-survival-guide</category>
+    </item>
+    <item>
+      <title>5 Apps That Saved My GPA</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/5-apps-that-saved-my-gpa</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/5-apps-that-saved-my-gpa</guid>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 GMT</pubDate>
+      <description>5 Apps That Saved My GPA</description>
+      <author>Lena Okafor</author>
+            <category>research</category>
+      <category>career</category>
+    </item>
+    <item>
+      <title>How to Negotiate Your Internship Offer</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-negotiate-your-internship-offer</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-negotiate-your-internship-offer</guid>
+      <pubDate>Sat, 21 Feb 2026 00:00:00 GMT</pubDate>
+      <description>How to Negotiate Your Internship Offer</description>
+      <author>Ravi Patel</author>
+            <category>networking</category>
+      <category>passive-income</category>
+      <category>the-grind</category>
+    </item>
+    <item>
+      <title>The Beginner's Guide to Dividend Investing</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-beginner-s-guide-to-dividend-investing</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-beginner-s-guide-to-dividend-investing</guid>
+      <pubDate>Sat, 14 Feb 2026 00:00:00 GMT</pubDate>
+      <description>The Beginner's Guide to Dividend Investing</description>
+      <author>Yusuf Adedapo</author>
+            <category>ai</category>
+      <category>productivity</category>
+      <category>study-hacks</category>
+      <category>the-survival-guide</category>
+    </item>
+    <item>
+      <title>Why Every Student Should Learn Public Speaking</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-every-student-should-learn-public-speaking</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-every-student-should-learn-public-speaking</guid>
+      <pubDate>Sat, 07 Feb 2026 00:00:00 GMT</pubDate>
+      <description>Why Every Student Should Learn Public Speaking</description>
+      <author>Maya Chen</author>
+            <category>ai</category>
+      <category>networking</category>
+    </item>
+    <item>
+      <title>How to Build a Personal Brand on LinkedIn</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-build-a-personal-brand-on-linkedin</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-build-a-personal-brand-on-linkedin</guid>
+      <pubDate>Fri, 30 Jan 2026 00:00:00 GMT</pubDate>
+      <description>How to Build a Personal Brand on LinkedIn</description>
+      <author>Dr. Aris Vane</author>
+            <category>the-toolkit</category>
+      <category>data</category>
+      <category>research</category>
+    </item>
+    <item>
+      <title>The Science Behind Effective Study Breaks</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-science-behind-effective-study-breaks</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-science-behind-effective-study-breaks</guid>
+      <pubDate>Fri, 23 Jan 2026 00:00:00 GMT</pubDate>
+      <description>The Science Behind Effective Study Breaks</description>
+      <author>Jake Morrison</author>
+            <category>passive-income</category>
+      <category>the-survival-guide</category>
+      <category>side-hustle</category>
+      <category>study-hacks</category>
+    </item>
+    <item>
+      <title>How I Automated My Job Search with Python</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-i-automated-my-job-search-with-python</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-i-automated-my-job-search-with-python</guid>
+      <pubDate>Fri, 16 Jan 2026 00:00:00 GMT</pubDate>
+      <description>How I Automated My Job Search with Python</description>
+      <author>Lena Okafor</author>
+            <category>networking</category>
+      <category>study-hacks</category>
+    </item>
+    <item>
+      <title>Zettelkasten: The Note-Taking Method for Smart People</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/zettelkasten-the-note-taking-method-for-smart-people</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/zettelkasten-the-note-taking-method-for-smart-people</guid>
+      <pubDate>Thu, 08 Jan 2026 00:00:00 GMT</pubDate>
+      <description>Zettelkasten: The Note-Taking Method for Smart People</description>
+      <author>Ravi Patel</author>
+            <category>ai</category>
+      <category>career</category>
+      <category>passive-income</category>
+    </item>
+    <item>
+      <title>How to Start a Dropshipping Business as a Student</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-start-a-dropshipping-business-as-a-student</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-start-a-dropshipping-business-as-a-student</guid>
+      <pubDate>Thu, 01 Jan 2026 00:00:00 GMT</pubDate>
+      <description>How to Start a Dropshipping Business as a Student</description>
+      <author>Yusuf Adedapo</author>
+            <category>the-toolkit</category>
+      <category>ai</category>
+      <category>networking</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>The ROI of Joining Student Organizations</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-roi-of-joining-student-organizations</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-roi-of-joining-student-organizations</guid>
+      <pubDate>Thu, 25 Dec 2025 00:00:00 GMT</pubDate>
+      <description>The ROI of Joining Student Organizations</description>
+      <author>Maya Chen</author>
+            <category>study-hacks</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>6 ChatGPT Prompts That Supercharge Your Studying</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/6-chatgpt-prompts-that-supercharge-your-studying</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/6-chatgpt-prompts-that-supercharge-your-studying</guid>
+      <pubDate>Wed, 17 Dec 2025 00:00:00 GMT</pubDate>
+      <description>6 ChatGPT Prompts That Supercharge Your Studying</description>
+      <author>Dr. Aris Vane</author>
+            <category>networking</category>
+      <category>productivity</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>How to Crush Virtual Interviews as a Student</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-crush-virtual-interviews-as-a-student</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-crush-virtual-interviews-as-a-student</guid>
+      <pubDate>Wed, 10 Dec 2025 00:00:00 GMT</pubDate>
+      <description>How to Crush Virtual Interviews as a Student</description>
+      <author>Jake Morrison</author>
+            <category>side-hustle</category>
+      <category>data</category>
+      <category>career</category>
+      <category>study-hacks</category>
+    </item>
+    <item>
+      <title>The 50/30/20 Budget Rule for Students</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-50-30-20-budget-rule-for-students</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-50-30-20-budget-rule-for-students</guid>
+      <pubDate>Wed, 03 Dec 2025 00:00:00 GMT</pubDate>
+      <description>The 50/30/20 Budget Rule for Students</description>
+      <author>Lena Okafor</author>
+            <category>the-grind</category>
+      <category>the-survival-guide</category>
+    </item>
+    <item>
+      <title>Why You Should Learn SQL Before Graduation</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-you-should-learn-sql-before-graduation</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-you-should-learn-sql-before-graduation</guid>
+      <pubDate>Wed, 26 Nov 2025 00:00:00 GMT</pubDate>
+      <description>Why You Should Learn SQL Before Graduation</description>
+      <author>Ravi Patel</author>
+            <category>research</category>
+      <category>data</category>
+      <category>the-toolkit</category>
+    </item>
+    <item>
+      <title>How to Find a Mentor in College</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-find-a-mentor-in-college</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-find-a-mentor-in-college</guid>
+      <pubDate>Tue, 18 Nov 2025 00:00:00 GMT</pubDate>
+      <description>How to Find a Mentor in College</description>
+      <author>Yusuf Adedapo</author>
+            <category>networking</category>
+      <category>study-hacks</category>
+      <category>data</category>
+      <category>the-grind</category>
+    </item>
+    <item>
+      <title>The Art of the Cold Email (That Actually Gets Replies)</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-art-of-the-cold-email-that-actually-gets-replies</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-art-of-the-cold-email-that-actually-gets-replies</guid>
+      <pubDate>Tue, 11 Nov 2025 00:00:00 GMT</pubDate>
+      <description>The Art of the Cold Email (That Actually Gets Replies)</description>
+      <author>Maya Chen</author>
+            <category>research</category>
+      <category>finance</category>
+    </item>
+    <item>
+      <title>How I Built a SaaS Product in One Semester</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-i-built-a-saas-product-in-one-semester</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-i-built-a-saas-product-in-one-semester</guid>
+      <pubDate>Tue, 04 Nov 2025 00:00:00 GMT</pubDate>
+      <description>How I Built a SaaS Product in One Semester</description>
+      <author>Dr. Aris Vane</author>
+            <category>research</category>
+      <category>networking</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>The Best Free Online Courses for Career Growth</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-best-free-online-courses-for-career-growth</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-best-free-online-courses-for-career-growth</guid>
+      <pubDate>Mon, 27 Oct 2025 00:00:00 GMT</pubDate>
+      <description>The Best Free Online Courses for Career Growth</description>
+      <author>Jake Morrison</author>
+            <category>study-hacks</category>
+      <category>finance</category>
+      <category>passive-income</category>
+      <category>networking</category>
+    </item>
+    <item>
+      <title>How to Stay Fit While Grinding Through Exams</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-stay-fit-while-grinding-through-exams</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-stay-fit-while-grinding-through-exams</guid>
+      <pubDate>Mon, 20 Oct 2025 00:00:00 GMT</pubDate>
+      <description>How to Stay Fit While Grinding Through Exams</description>
+      <author>Lena Okafor</author>
+            <category>passive-income</category>
+      <category>productivity</category>
+    </item>
+    <item>
+      <title>5 Side Hustles That Require Zero Startup Capital</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/5-side-hustles-that-require-zero-startup-capital</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/5-side-hustles-that-require-zero-startup-capital</guid>
+      <pubDate>Mon, 13 Oct 2025 00:00:00 GMT</pubDate>
+      <description>5 Side Hustles That Require Zero Startup Capital</description>
+      <author>Ravi Patel</author>
+            <category>networking</category>
+      <category>career</category>
+      <category>the-survival-guide</category>
+    </item>
+    <item>
+      <title>How to Turn Your Class Project into a Business</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-turn-your-class-project-into-a-business</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-turn-your-class-project-into-a-business</guid>
+      <pubDate>Sun, 05 Oct 2025 00:00:00 GMT</pubDate>
+      <description>How to Turn Your Class Project into a Business</description>
+      <author>Yusuf Adedapo</author>
+            <category>study-hacks</category>
+      <category>productivity</category>
+      <category>the-grind</category>
+      <category>finance</category>
+    </item>
+    <item>
+      <title>The Complete Guide to Campus Recruitment</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-complete-guide-to-campus-recruitment</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-complete-guide-to-campus-recruitment</guid>
+      <pubDate>Sun, 28 Sep 2025 00:00:00 GMT</pubDate>
+      <description>The Complete Guide to Campus Recruitment</description>
+      <author>Maya Chen</author>
+            <category>research</category>
+      <category>career</category>
+    </item>
+    <item>
+      <title>Why Boring Skills Pay the Bills</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-boring-skills-pay-the-bills</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-boring-skills-pay-the-bills</guid>
+      <pubDate>Sun, 21 Sep 2025 00:00:00 GMT</pubDate>
+      <description>Why Boring Skills Pay the Bills</description>
+      <author>Dr. Aris Vane</author>
+            <category>the-grind</category>
+      <category>side-hustle</category>
+      <category>data</category>
+    </item>
+    <item>
+      <title>How to Use AI to Land Your Dream Job</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-use-ai-to-land-your-dream-job</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-use-ai-to-land-your-dream-job</guid>
+      <pubDate>Sun, 14 Sep 2025 00:00:00 GMT</pubDate>
+      <description>How to Use AI to Land Your Dream Job</description>
+      <author>Jake Morrison</author>
+            <category>career</category>
+      <category>ai</category>
+      <category>finance</category>
+      <category>the-toolkit</category>
+    </item>
+    <item>
+      <title>The Student's Guide to Real Estate Investing</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-student-s-guide-to-real-estate-investing</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-student-s-guide-to-real-estate-investing</guid>
+      <pubDate>Sat, 06 Sep 2025 00:00:00 GMT</pubDate>
+      <description>The Student's Guide to Real Estate Investing</description>
+      <author>Lena Okafor</author>
+            <category>passive-income</category>
+      <category>data</category>
+    </item>
+    <item>
+      <title>How I Got 3 Internship Offers in One Month</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-i-got-3-internship-offers-in-one-month</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-i-got-3-internship-offers-in-one-month</guid>
+      <pubDate>Sat, 30 Aug 2025 00:00:00 GMT</pubDate>
+      <description>How I Got 3 Internship Offers in One Month</description>
+      <author>Ravi Patel</author>
+            <category>the-toolkit</category>
+      <category>finance</category>
+      <category>data</category>
+    </item>
+    <item>
+      <title>The Power Laws of Networking Every Student Should Know</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-power-laws-of-networking-every-student-should-know</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-power-laws-of-networking-every-student-should-know</guid>
+      <pubDate>Sat, 23 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The Power Laws of Networking Every Student Should Know</description>
+      <author>Yusuf Adedapo</author>
+            <category>networking</category>
+      <category>career</category>
+      <category>passive-income</category>
+      <category>ai</category>
+    </item>
+    <item>
+      <title>How to Create a Content Funnel That Makes Money</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/how-to-create-a-content-funnel-that-makes-money</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/how-to-create-a-content-funnel-that-makes-money</guid>
+      <pubDate>Fri, 15 Aug 2025 00:00:00 GMT</pubDate>
+      <description>How to Create a Content Funnel That Makes Money</description>
+      <author>Maya Chen</author>
+            <category>the-survival-guide</category>
+      <category>study-hacks</category>
+    </item>
+    <item>
+      <title>Why You Should Care About Financial Literacy Now</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/why-you-should-care-about-financial-literacy-now</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/why-you-should-care-about-financial-literacy-now</guid>
+      <pubDate>Fri, 08 Aug 2025 00:00:00 GMT</pubDate>
+      <description>Why You Should Care About Financial Literacy Now</description>
+      <author>Dr. Aris Vane</author>
+            <category>networking</category>
+      <category>study-hacks</category>
+      <category>passive-income</category>
+    </item>
+    <item>
+      <title>The Ultimate Hack for Learning Anything Faster</title>
+      <link>https://hustleledger.github.io/blog/blog/posts/the-ultimate-hack-for-learning-anything-faster</link>
+      <guid isPermaLink="true">https://hustleledger.github.io/blog/blog/posts/the-ultimate-hack-for-learning-anything-faster</guid>
+      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
+      <description>The Ultimate Hack for Learning Anything Faster</description>
+      <author>Jake Morrison</author>
+            <category>passive-income</category>
+      <category>productivity</category>
+      <category>research</category>
+      <category>the-survival-guide</category>
+    </item>
+  </channel>
+</rss>
