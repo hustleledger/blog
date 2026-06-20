@@ -1,679 +1,679 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/</loc>
+    <loc>https://hustleledger.github.io/blog/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/404</loc>
+    <loc>https://hustleledger.github.io/blog/404</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/</loc>
+    <loc>https://hustleledger.github.io/blog/posts/</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/</loc>
+    <loc>https://hustleledger.github.io/blog/tags/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/categories/</loc>
+    <loc>https://hustleledger.github.io/blog/categories/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/</loc>
+    <loc>https://hustleledger.github.io/blog/authors/</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/page/2</loc>
+    <loc>https://hustleledger.github.io/blog/posts/page/2</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/page/3</loc>
+    <loc>https://hustleledger.github.io/blog/posts/page/3</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/page/4</loc>
+    <loc>https://hustleledger.github.io/blog/posts/page/4</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/page/5</loc>
+    <loc>https://hustleledger.github.io/blog/posts/page/5</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/page/6</loc>
+    <loc>https://hustleledger.github.io/blog/posts/page/6</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-ace-finals-using-spaced-repetition</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-ace-finals-using-spaced-repetition</loc>
     <lastmod>2026-06-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-notion-for-students</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-ultimate-guide-to-notion-for-students</loc>
     <lastmod>2026-06-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/5-ai-tools-that-actually-help-with-research</loc>
+    <loc>https://hustleledger.github.io/blog/posts/5-ai-tools-that-actually-help-with-research</loc>
     <lastmod>2026-06-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-saved-500-month-as-a-student</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-saved-500-month-as-a-student</loc>
     <lastmod>2026-05-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-you-should-start-a-side-hustle-in-freshman-year</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-you-should-start-a-side-hustle-in-freshman-year</loc>
     <lastmod>2026-05-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-ai-policy-lie</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-ai-policy-lie</loc>
     <lastmod>2026-05-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/building-a-portfolio-that-lands-internships</loc>
+    <loc>https://hustleledger.github.io/blog/posts/building-a-portfolio-that-lands-internships</loc>
     <lastmod>2026-05-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-pomodoro-technique-actually-works-here-s-why</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-pomodoro-technique-actually-works-here-s-why</loc>
     <lastmod>2026-05-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-student-ai-stack</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-student-ai-stack</loc>
     <lastmod>2026-05-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-network-without-being-awkward</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-network-without-being-awkward</loc>
     <lastmod>2026-04-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/freelancing-101-from-zero-to-first-client</loc>
+    <loc>https://hustleledger.github.io/blog/posts/freelancing-101-from-zero-to-first-client</loc>
     <lastmod>2026-04-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/priority-lab-access-hidden-api</loc>
+    <loc>https://hustleledger.github.io/blog/posts/priority-lab-access-hidden-api</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/cloud-sourced-notetaking-empire</loc>
+    <loc>https://hustleledger.github.io/blog/posts/cloud-sourced-notetaking-empire</loc>
     <lastmod>2026-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-you-need-a-second-brain-as-a-student</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-you-need-a-second-brain-as-a-student</loc>
     <lastmod>2026-04-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-after-hours-network</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-after-hours-network</loc>
     <lastmod>2026-04-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-best-part-time-jobs-that-pay-well-for-students</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-best-part-time-jobs-that-pay-well-for-students</loc>
     <lastmod>2026-04-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-write-a-resume-that-gets-past-ats</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-write-a-resume-that-gets-past-ats</loc>
     <lastmod>2026-03-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/python-for-non-cs-majors-a-practical-guide</loc>
+    <loc>https://hustleledger.github.io/blog/posts/python-for-non-cs-majors-a-practical-guide</loc>
     <lastmod>2026-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-grew-my-side-hustle-to-2000-month</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-grew-my-side-hustle-to-2000-month</loc>
     <lastmod>2026-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-ultimate-guide-to-scholarship-hunting</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-ultimate-guide-to-scholarship-hunting</loc>
     <lastmod>2026-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/5-apps-that-saved-my-gpa</loc>
+    <loc>https://hustleledger.github.io/blog/posts/5-apps-that-saved-my-gpa</loc>
     <lastmod>2026-02-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-negotiate-your-internship-offer</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-negotiate-your-internship-offer</loc>
     <lastmod>2026-02-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-beginner-s-guide-to-dividend-investing</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-beginner-s-guide-to-dividend-investing</loc>
     <lastmod>2026-02-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-every-student-should-learn-public-speaking</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-every-student-should-learn-public-speaking</loc>
     <lastmod>2026-02-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-build-a-personal-brand-on-linkedin</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-build-a-personal-brand-on-linkedin</loc>
     <lastmod>2026-01-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-science-behind-effective-study-breaks</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-science-behind-effective-study-breaks</loc>
     <lastmod>2026-01-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-automated-my-job-search-with-python</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-automated-my-job-search-with-python</loc>
     <lastmod>2026-01-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/zettelkasten-the-note-taking-method-for-smart-people</loc>
+    <loc>https://hustleledger.github.io/blog/posts/zettelkasten-the-note-taking-method-for-smart-people</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-start-a-dropshipping-business-as-a-student</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-start-a-dropshipping-business-as-a-student</loc>
     <lastmod>2026-01-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-roi-of-joining-student-organizations</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-roi-of-joining-student-organizations</loc>
     <lastmod>2025-12-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/6-chatgpt-prompts-that-supercharge-your-studying</loc>
+    <loc>https://hustleledger.github.io/blog/posts/6-chatgpt-prompts-that-supercharge-your-studying</loc>
     <lastmod>2025-12-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-crush-virtual-interviews-as-a-student</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-crush-virtual-interviews-as-a-student</loc>
     <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-50-30-20-budget-rule-for-students</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-50-30-20-budget-rule-for-students</loc>
     <lastmod>2025-12-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-you-should-learn-sql-before-graduation</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-you-should-learn-sql-before-graduation</loc>
     <lastmod>2025-11-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-find-a-mentor-in-college</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-find-a-mentor-in-college</loc>
     <lastmod>2025-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-art-of-the-cold-email-that-actually-gets-replies</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-art-of-the-cold-email-that-actually-gets-replies</loc>
     <lastmod>2025-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-built-a-saas-product-in-one-semester</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-built-a-saas-product-in-one-semester</loc>
     <lastmod>2025-11-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-best-free-online-courses-for-career-growth</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-best-free-online-courses-for-career-growth</loc>
     <lastmod>2025-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-stay-fit-while-grinding-through-exams</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-stay-fit-while-grinding-through-exams</loc>
     <lastmod>2025-10-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/5-side-hustles-that-require-zero-startup-capital</loc>
+    <loc>https://hustleledger.github.io/blog/posts/5-side-hustles-that-require-zero-startup-capital</loc>
     <lastmod>2025-10-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-turn-your-class-project-into-a-business</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-turn-your-class-project-into-a-business</loc>
     <lastmod>2025-10-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-complete-guide-to-campus-recruitment</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-complete-guide-to-campus-recruitment</loc>
     <lastmod>2025-09-28</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-boring-skills-pay-the-bills</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-boring-skills-pay-the-bills</loc>
     <lastmod>2025-09-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-use-ai-to-land-your-dream-job</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-use-ai-to-land-your-dream-job</loc>
     <lastmod>2025-09-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-student-s-guide-to-real-estate-investing</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-student-s-guide-to-real-estate-investing</loc>
     <lastmod>2025-09-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-got-3-internship-offers-in-one-month</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-got-3-internship-offers-in-one-month</loc>
     <lastmod>2025-08-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-power-laws-of-networking-every-student-should-know</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-power-laws-of-networking-every-student-should-know</loc>
     <lastmod>2025-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-create-a-content-funnel-that-makes-money</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-create-a-content-funnel-that-makes-money</loc>
     <lastmod>2025-08-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-you-should-care-about-financial-literacy-now</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-you-should-care-about-financial-literacy-now</loc>
     <lastmod>2025-08-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-ultimate-hack-for-learning-anything-faster</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-ultimate-hack-for-learning-anything-faster</loc>
     <lastmod>2025-08-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-i-used-open-source-to-build-my-career</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-i-used-open-source-to-build-my-career</loc>
     <lastmod>2025-07-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-psychology-of-productivity-stop-procrastinating</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-psychology-of-productivity-stop-procrastinating</loc>
     <lastmod>2025-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/how-to-start-investing-with-100-as-a-student</loc>
+    <loc>https://hustleledger.github.io/blog/posts/how-to-start-investing-with-100-as-a-student</loc>
     <lastmod>2025-07-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/why-generalists-win-in-the-age-of-ai</loc>
+    <loc>https://hustleledger.github.io/blog/posts/why-generalists-win-in-the-age-of-ai</loc>
     <lastmod>2025-07-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/the-complete-roadmap-to-a-tech-career-without-a-cs-degree</loc>
+    <loc>https://hustleledger.github.io/blog/posts/the-complete-roadmap-to-a-tech-career-without-a-cs-degree</loc>
     <lastmod>2025-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/digital-wingman-ai</loc>
+    <loc>https://hustleledger.github.io/blog/posts/digital-wingman-ai</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing-1</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing-1</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing-2</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing-2</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing-3</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing-3</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing-5</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing-5</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing-7</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing-7</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/posts/testing</loc>
+    <loc>https://hustleledger.github.io/blog/posts/testing</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/ai</loc>
+    <loc>https://hustleledger.github.io/blog/tags/ai</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/networking</loc>
+    <loc>https://hustleledger.github.io/blog/tags/networking</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/data</loc>
+    <loc>https://hustleledger.github.io/blog/tags/data</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/passive-income</loc>
+    <loc>https://hustleledger.github.io/blog/tags/passive-income</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/study-hacks</loc>
+    <loc>https://hustleledger.github.io/blog/tags/study-hacks</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/career</loc>
+    <loc>https://hustleledger.github.io/blog/tags/career</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/productivity</loc>
+    <loc>https://hustleledger.github.io/blog/tags/productivity</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-survival-guide</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-survival-guide</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-toolkit</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-toolkit</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/finance</loc>
+    <loc>https://hustleledger.github.io/blog/tags/finance</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/research</loc>
+    <loc>https://hustleledger.github.io/blog/tags/research</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/side-hustle</loc>
+    <loc>https://hustleledger.github.io/blog/tags/side-hustle</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-grind</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-grind</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/ai</loc>
+    <loc>https://hustleledger.github.io/blog/tags/ai</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-survival-guide</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-survival-guide</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/productivity</loc>
+    <loc>https://hustleledger.github.io/blog/tags/productivity</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/study-hacks</loc>
+    <loc>https://hustleledger.github.io/blog/tags/study-hacks</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/ade</loc>
+    <loc>https://hustleledger.github.io/blog/tags/ade</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/adf</loc>
+    <loc>https://hustleledger.github.io/blog/tags/adf</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/career</loc>
+    <loc>https://hustleledger.github.io/blog/tags/career</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/ada</loc>
+    <loc>https://hustleledger.github.io/blog/tags/ada</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/adee</loc>
+    <loc>https://hustleledger.github.io/blog/tags/adee</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/data</loc>
+    <loc>https://hustleledger.github.io/blog/tags/data</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/fae-afe</loc>
+    <loc>https://hustleledger.github.io/blog/tags/fae-afe</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/finance</loc>
+    <loc>https://hustleledger.github.io/blog/tags/finance</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/networking</loc>
+    <loc>https://hustleledger.github.io/blog/tags/networking</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/passive-income</loc>
+    <loc>https://hustleledger.github.io/blog/tags/passive-income</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/research</loc>
+    <loc>https://hustleledger.github.io/blog/tags/research</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/side-hustle</loc>
+    <loc>https://hustleledger.github.io/blog/tags/side-hustle</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-grind</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-grind</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/tags/the-toolkit</loc>
+    <loc>https://hustleledger.github.io/blog/tags/the-toolkit</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/categories/the-grind</loc>
+    <loc>https://hustleledger.github.io/blog/categories/the-grind</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/categories/the-survival-guide</loc>
+    <loc>https://hustleledger.github.io/blog/categories/the-survival-guide</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/categories/the-toolkit</loc>
+    <loc>https://hustleledger.github.io/blog/categories/the-toolkit</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/yusuf-adedapo</loc>
+    <loc>https://hustleledger.github.io/blog/authors/yusuf-adedapo</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/maya-chen</loc>
+    <loc>https://hustleledger.github.io/blog/authors/maya-chen</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/dr-aris-vane</loc>
+    <loc>https://hustleledger.github.io/blog/authors/dr-aris-vane</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/jake-morrison</loc>
+    <loc>https://hustleledger.github.io/blog/authors/jake-morrison</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/lena-okafor</loc>
+    <loc>https://hustleledger.github.io/blog/authors/lena-okafor</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://hustleledger.github.io/blog/blog/authors/ravi-patel</loc>
+    <loc>https://hustleledger.github.io/blog/authors/ravi-patel</loc>
     <lastmod>2026-06-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
