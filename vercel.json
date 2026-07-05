@@ -1,5 +1,14 @@
 {
-  "routes": [
-    { "src": "/(.*)", "dest": "/api/server.js" }
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/admin", "destination": "/404", "permanent": false },
+    { "source": "/admin/:path*", "destination": "/404", "permanent": false },
+    { "source": "/author", "destination": "/404", "permanent": false },
+    { "source": "/author/:path*", "destination": "/404", "permanent": false },
+    { "source": "/api/:path*", "destination": "/404", "permanent": false },
+    { "source": "/submissions", "destination": "/404", "permanent": false },
+    { "source": "/submissions/:path*", "destination": "/404", "permanent": false },
+    { "source": "/content/:path*", "destination": "/404", "permanent": false },
+    { "source": "/output/:path*", "destination": "/404", "permanent": false }
   ]
 }
