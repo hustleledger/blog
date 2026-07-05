@@ -208,7 +208,7 @@
     <div class="mt-6 flex gap-2">
       <a href="/" class="border border-outline-variant/30 text-on-surface-variant px-4 py-1.5 rounded-full text-label-sm hover:border-primary/50 transition-all">← All Posts</a>
     </div>
-  </section><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="bentoGridInner"><a href="/posts/the-ai-policy-lie" class="md:col-span-8 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" data-tags="the-survival-guide ai career productivity study-hacks">
+  </section><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="bentoGridInner"><a href="/posts/the-ai-policy-lie" class="md:col-span-8 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" data-slug="the-ai-policy-lie" data-tags="the-survival-guide ai career productivity study-hacks">
         <div class="aspect-video md:aspect-[21/9] w-full overflow-hidden relative">
           <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200" alt="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" loading="lazy">
         </div>
@@ -225,7 +225,7 @@
           </div>
           <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Career</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
         </div>
-      </a><a href="/posts/the-after-hours-network" class="md:col-span-4 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="How I Automated My Job Applications and Landed 3 Internships" data-tags="the-survival-guide ai career networking">
+      </a><a href="/posts/the-after-hours-network" class="md:col-span-4 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="How I Automated My Job Applications and Landed 3 Internships" data-slug="the-after-hours-network" data-tags="the-survival-guide ai career networking">
         <div class="aspect-video md:aspect-square w-full overflow-hidden relative">
           <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200" alt="How I Automated My Job Applications and Landed 3 Internships" loading="lazy">
         </div>
@@ -283,6 +283,50 @@
       var scrolled = (winScroll / height) * 100;
       document.getElementById('progressBar').style.width = scrolled + '%';
     });
+
+    // Client-side latest-posts.json fallback — shows posts published via proxy between full deploys
+    (function() {
+      var grid = document.getElementById('bentoGridInner');
+      if (!grid) return;
+      fetch('/latest-posts.json')
+        .then(function(r) { return r.json(); })
+        .then(function(posts) {
+          if (!posts || !posts.length) return;
+          var existingSlugs = {};
+          grid.querySelectorAll('a[data-slug]').forEach(function(el) {
+            existingSlugs[el.getAttribute('data-slug')] = true;
+          });
+          var newer = [];
+          posts.forEach(function(p) {
+            if (!existingSlugs[p.slug]) newer.push(p);
+          });
+          if (!newer.length) return;
+          var section = document.createElement('div');
+          section.className = 'mb-12';
+          var heading = document.createElement('h2');
+          heading.className = 'font-display text-headline-md text-on-surface mb-6';
+          heading.textContent = 'Just Published';
+          section.appendChild(heading);
+          var subGrid = document.createElement('div');
+          subGrid.className = 'grid grid-cols-1 md:grid-cols-12 gap-gutter';
+          newer.forEach(function(p) {
+            var a = document.createElement('a');
+            a.href = '/posts/' + p.slug;
+            a.className = 'md:col-span-6 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block';
+            a.innerHTML = (p.og_image ? '<div class="aspect-video w-full overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + escAttr(p.og_image) + '" alt="' + escAttr(p.title) + '" loading="lazy"></div>' : '')
+              + '<div class="p-5"><h3 class="font-display text-headline-md mb-2 text-on-surface">' + escHtml(p.title) + '</h3>'
+              + '<div class="flex items-center gap-3 text-label-sm text-on-surface-variant/60 mb-2">' + (p.date ? '<span>' + p.date + '</span><span class="text-outline">·</span>' : '') + '<span>' + (p.read_time || '5 min') + ' read</span></div>'
+              + (p.description ? '<p class="text-on-surface-variant text-body-md line-clamp-2">' + escHtml(p.description) + '</p>' : '')
+              + '</div>';
+            subGrid.appendChild(a);
+          });
+          section.appendChild(subGrid);
+          grid.parentNode.insertBefore(section, grid);
+        }).catch(function() {});
+    })();
+
+    function escHtml(s) { if (!s) return ''; return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+    function escAttr(s) { if (!s) return ''; return s.replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
   </script>
   <script>window.__ADS_ENABLED = true;</script>
 </body>
