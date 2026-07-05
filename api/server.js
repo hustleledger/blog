@@ -35,7 +35,8 @@ module.exports = (req, res) => {
   }
 
   for (const c of candidates) {
-    const fp = path.join(ROOT, c);
+    const safe = c.startsWith('/') ? c.slice(1) : c;
+    const fp = path.join(ROOT, safe);
     if (fs.existsSync(fp) && fs.statSync(fp).isFile()) {
       return serve(res, 200, fp);
     }
