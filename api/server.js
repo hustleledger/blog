@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const BLOCKED_PREFIXES = ['/admin', '/author', '/api', '/submissions', '/content', '/output'];
-const ROOT = path.join(__dirname, '..');
+const ROOT = process.cwd();
 const MIME = { '.html':'text/html','.css':'text/css','.js':'application/javascript','.json':'application/json','.xml':'application/xml','.txt':'text/plain','.svg':'image/svg+xml','.png':'image/png','.ico':'image/x-icon' };
 
 function serve(res, code, filePath) {
