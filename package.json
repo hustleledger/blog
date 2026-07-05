@@ -1,0 +1,6 @@
+{
+  "name": "hustleledger-blog",
+  "private": true,
+  "main": "api/server.js",
+  "engines": { "node": "24.x" }
+}
