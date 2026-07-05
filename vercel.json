@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
   "routes": [
-    { "src": "/(admin|author|api|submissions|content|output)(/.*)?", "dest": "/404" }
+    { "src": "/(admin|author|api|submissions|content|output)(/.*)?", "dest": "/404", "status": 404 }
   ]
 }
