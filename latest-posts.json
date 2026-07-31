@@ -1,5 +1,14 @@
 [
   {
+    "title": "Sub",
+    "slug": "__refactor_sub__",
+    "description": "",
+    "og_image": "",
+    "date": "2026-07-31",
+    "author": "HustleLedger Staff",
+    "read_time": "5 min"
+  },
+  {
     "title": "How to Ace Finals Using Spaced Repetition",
     "slug": "how-to-ace-finals-using-spaced-repetition",
     "description": "How to Ace Finals Using Spaced Repetition",
@@ -43,14 +52,5 @@
     "date": "2026-05-20",
     "author": "Ravi Patel",
     "read_time": "7 min"
-  },
-  {
-    "title": "Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught",
-    "slug": "the-ai-policy-lie",
-    "description": "Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.",
-    "og_image": "https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200",
-    "date": "2026-05-18",
-    "author": "Jake Morrison",
-    "read_time": "9 min"
   }
 ]

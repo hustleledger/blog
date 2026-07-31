@@ -5,8 +5,17 @@
     <link>https://hustleledger-five.vercel.app/</link>
     <description>Smart strategies for the modern university student.</description>
     <language>en-us</language>
-    <lastBuildDate>Fri, 31 Jul 2026 19:14:33 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jul 2026 19:37:12 GMT</lastBuildDate>
     <atom:link href="https://hustleledger-five.vercel.app/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Sub</title>
+      <link>https://hustleledger-five.vercel.app/posts/__refactor_sub__</link>
+      <guid isPermaLink="true">https://hustleledger-five.vercel.app/posts/__refactor_sub__</guid>
+      <pubDate>Fri, 31 Jul 2026 00:00:00 GMT</pubDate>
+      <description></description>
+      <author>HustleLedger Staff</author>
+      
+    </item>
     <item>
       <title>How to Ace Finals Using Spaced Repetition</title>
       <link>https://hustleledger-five.vercel.app/posts/how-to-ace-finals-using-spaced-repetition</link>
@@ -550,18 +559,6 @@
             <category>networking</category>
       <category>study-hacks</category>
       <category>passive-income</category>
-    </item>
-    <item>
-      <title>The Ultimate Hack for Learning Anything Faster</title>
-      <link>https://hustleledger-five.vercel.app/posts/the-ultimate-hack-for-learning-anything-faster</link>
-      <guid isPermaLink="true">https://hustleledger-five.vercel.app/posts/the-ultimate-hack-for-learning-anything-faster</guid>
-      <pubDate>Fri, 01 Aug 2025 00:00:00 GMT</pubDate>
-      <description>The Ultimate Hack for Learning Anything Faster</description>
-      <author>Jake Morrison</author>
-            <category>passive-income</category>
-      <category>productivity</category>
-      <category>research</category>
-      <category>the-survival-guide</category>
     </item>
   </channel>
 </rss>
