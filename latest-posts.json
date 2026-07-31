@@ -9,48 +9,48 @@
     "read_time": "5 min"
   },
   {
-    "title": "How to Ace Finals Using Spaced Repetition",
-    "slug": "how-to-ace-finals-using-spaced-repetition",
-    "description": "How to Ace Finals Using Spaced Repetition",
-    "og_image": "https://images.unsplash.com/photo-18000000?w=1200",
-    "date": "2026-06-18",
-    "author": "Maya Chen",
-    "read_time": "3 min"
-  },
-  {
-    "title": "The Ultimate Guide to Notion for Students",
-    "slug": "the-ultimate-guide-to-notion-for-students",
-    "description": "The Ultimate Guide to Notion for Students",
-    "og_image": "",
-    "date": "2026-06-11",
-    "author": "Dr. Aris Vane",
-    "read_time": "4 min"
-  },
-  {
-    "title": "5 AI Tools That Actually Help With Research",
-    "slug": "5-ai-tools-that-actually-help-with-research",
-    "description": "5 AI Tools That Actually Help With Research",
-    "og_image": "https://images.unsplash.com/photo-18024690?w=1200",
-    "date": "2026-06-03",
+    "title": "Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught",
+    "slug": "the-ai-policy-lie",
+    "description": "Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.",
+    "og_image": "https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200",
+    "date": "2026-05-18",
     "author": "Jake Morrison",
-    "read_time": "5 min"
+    "read_time": "9 min"
   },
   {
-    "title": "How I Saved $500/Month as a Student",
-    "slug": "how-i-saved-500-month-as-a-student",
-    "description": "How I Saved $500/Month as a Student",
-    "og_image": "",
-    "date": "2026-05-27",
-    "author": "Lena Okafor",
-    "read_time": "6 min"
+    "title": "The Student AI Stack: 7 Free Tools That Save 10 Hours a Week",
+    "slug": "the-student-ai-stack",
+    "description": "Most students are running 8-15 different apps for school. You only need 7, all free, and they integrate into a single pipeline that cuts your weekly study time by 30-40%.",
+    "og_image": "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200",
+    "date": "2026-05-01",
+    "author": "Maya Chen",
+    "read_time": "10 min"
   },
   {
-    "title": "Why You Should Start a Side Hustle in Freshman Year",
-    "slug": "why-you-should-start-a-side-hustle-in-freshman-year",
-    "description": "Why You Should Start a Side Hustle in Freshman Year",
-    "og_image": "https://images.unsplash.com/photo-18049380?w=1200",
-    "date": "2026-05-20",
+    "title": "The $600/Mo Side Hustle: Selling Digital Products as a Student",
+    "slug": "priority-lab-access-hidden-api",
+    "description": "Sell digital products (study guides, templates, Notion dashboards) on Gumroad or Etsy. Create once, earn $200-$2,000/month passively. No inventory, no shipping, no customer service after setup.",
+    "og_image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200",
+    "date": "2026-04-20",
     "author": "Ravi Patel",
-    "read_time": "7 min"
+    "read_time": "10 min"
+  },
+  {
+    "title": "From Lecture to A-Grade: The Complete AI Note-Taking Pipeline",
+    "slug": "cloud-sourced-notetaking-empire",
+    "description": "Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.",
+    "og_image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200",
+    "date": "2026-04-15",
+    "author": "Maya Chen",
+    "read_time": "9 min"
+  },
+  {
+    "title": "How I Automated My Job Applications and Landed 3 Internships",
+    "slug": "the-after-hours-network",
+    "description": "Use AI to tailor every application to the specific role, track your pipeline automatically, and practice interviews with voice-based AI. I sent 47 applications, got 12 interviews, and received 3 offers.",
+    "og_image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200",
+    "date": "2026-04-10",
+    "author": "Lena Okafor",
+    "read_time": "8 min"
   }
 ]
