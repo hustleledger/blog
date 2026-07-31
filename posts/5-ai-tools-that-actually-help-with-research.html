@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1723'/%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='22' y1='20' x2='22' y2='80' stroke='%238F00FF' stroke-width='10'/%3E%3Cline x1='78' y1='20' x2='78' y2='80' stroke='%2300FFAB' stroke-width='10'/%3E%3Cpolyline points='22,50 48,50 38,68 78,50' stroke='%238F00FF' stroke-width='8'/%3E%3Cline x1='78' y1='80' x2='92' y2='80' stroke='%2300FFAB' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231a1723'/%3E%3Cg fill='%23eadff0'%3E%3Crect x='24' y='30' width='16' height='48' rx='4'/%3E%3Crect x='58' y='16' width='16' height='62' rx='4'/%3E%3Cpolygon points='40,58 40,44 58,26 58,40'/%3E%3C/g%3E%3C/svg%3E"/>
   <link rel="canonical" href="https://hustleledger-five.vercel.app/posts/5-ai-tools-that-actually-help-with-research">
   <meta property="og:title" content="5 AI Tools That Actually Help With Research">
     <meta property="og:description" content="5 AI Tools That Actually Help With Research">
@@ -114,6 +114,9 @@
   </script>
   <style>
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body .text-primary, body .text-primary\/30, body .text-primary\/60 { color: #c47fff; }
+    body .hover\:text-primary:hover { color: #c47fff; }
+    body .group:hover .group-hover\:text-primary { color: #c47fff; }
     .bento-glow { box-shadow: 0px 4px 20px rgba(143, 0, 255, 0.15); }
     .bento-card-glow { box-shadow: 0px 4px 20px rgba(143, 0, 255, 0.1); }
     .bento-border { border-top: 1px solid rgba(255, 255, 255, 0.1); }
@@ -173,7 +176,7 @@
   <header class="hidden md:block bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
     <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto gap-4">
       <div class="flex items-center gap-8 w-full md:w-auto">
-        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</a>
+        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
         <nav class="hidden lg:flex items-center gap-6">
           <a href="/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Home</a>
           <a href="/posts/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Posts</a>
@@ -189,7 +192,7 @@
   <!-- Mobile Header (simplified) -->
   <header class="md:hidden bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
     <div class="flex justify-between items-center w-full px-4 py-4 max-w-container-max mx-auto">
-      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</a>
+      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
       <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-3 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all">Subscribe</a>
     </div>
   </header>
@@ -222,7 +225,7 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div><article class="article-content font-body-lg leading-relaxed" style="color:#e5d9ec;"><p>Navigating the chaotic landscape of student life while trying to build a future is no small feat. Yet, every semester brings a fresh opportunity to rethink your approach, discard what doesn't work, and double down on strategies that actually move the needle. This is especially true when it comes to managing your time, your energy, and — let's be honest — your dwindling bank account.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-0" class="scroll-mt-28"></span>Why This Matters More Than You Think</h2>
     </div><p>The gap between students who thrive and those who simply survive often comes down to systems. Not talent, not luck, but repeatable processes that turn effort into results. Whether you're grinding through midterms or bootstrapping your first side project, the principles remain the same: consistency beats intensity, leverage beats brute force, and community beats going solo.</p><blockquote>"The most successful students aren't the smartest — they're the ones who figured out how to work smarter, not harder." — Anonymous</blockquote><p>Let's break it down. First, you need to audit where your time actually goes. Most students underestimate how many hours slip into doom-scrolling and indecision. Second, you need to pick one thing and go deep rather than spreading yourself across ten half-baked projects. Depth compounds. Breadth just burns you out.</p><p>Here are the key takeaways:</p><ul>
@@ -231,7 +234,7 @@
 <li>Surround yourself with people who are one level ahead of where you want to be.</li>
 </ul><p>The bottom line? Your student years are the ultimate sandbox. You have time, energy, and almost no real consequences for failure. Use that runway wisely, and you'll graduate not just with a degree, but with a head start that most people spend years trying to catch up to.</p></article><section class="mt-24 p-8 bg-surface-container rounded-2xl border border-outline-variant/20 flex flex-col md:flex-row gap-8 items-center md:items-start">
     <div class="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-primary bg-surface-container-highest flex items-center justify-center">
-      <span class="material-symbols-outlined text-4xl text-primary">person</span>
+      <span aria-hidden="true" class="material-symbols-outlined text-4xl text-primary">person</span>
     </div>
     <div>
       <h4 class="font-display text-headline-md text-on-surface mb-2">Written by Jake Morrison</h4>
@@ -246,7 +249,7 @@
         <h3 class="font-display text-headline-md font-bold text-on-surface mb-2">Weekly insights for the modern student</h3>
         <p class="text-body-md text-on-surface-variant max-w-lg">Get the HustleLedger newsletter — no spam, just strategy.</p>
       </div>
-      <a href="https://hustleledger.substack.com" target="_blank" class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20 whitespace-nowrap flex items-center gap-2">Subscribe Free <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <a href="https://hustleledger.substack.com" target="_blank" class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20 whitespace-nowrap flex items-center gap-2">Subscribe Free <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </div>
   </section><section class="mt-24">
     <h3 class="font-display text-headline-md text-on-surface mb-8">Related Vibes</h3>
@@ -273,7 +276,7 @@
   <footer class="hidden md:block w-full py-12 px-margin-desktop mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto items-center">
       <div class="md:col-span-4">
-        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</div>
+        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
         <p class="text-on-surface-variant/70 text-body-md">&copy; 2026 HustleLedger Ecosystem. All rights reserved.</p>
       </div>
       <div class="md:col-span-8 flex flex-wrap justify-end gap-8">
@@ -289,7 +292,7 @@
   <!-- Mobile Footer (compact) -->
   <footer class="md:hidden w-full px-4 py-8 mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
     <div class="text-center">
-      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</div>
+      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
       <div class="flex justify-center gap-4 mb-3">
         <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/posts/">Posts</a>
         <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/tags/">Tags</a>

@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
   <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%231a1723'/%3E%3Cg fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='22' y1='20' x2='22' y2='80' stroke='%238F00FF' stroke-width='10'/%3E%3Cline x1='78' y1='20' x2='78' y2='80' stroke='%2300FFAB' stroke-width='10'/%3E%3Cpolyline points='22,50 48,50 38,68 78,50' stroke='%238F00FF' stroke-width='8'/%3E%3Cline x1='78' y1='80' x2='92' y2='80' stroke='%2300FFAB' stroke-width='8'/%3E%3C/g%3E%3C/svg%3E"/>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231a1723'/%3E%3Cg fill='%23eadff0'%3E%3Crect x='24' y='30' width='16' height='48' rx='4'/%3E%3Crect x='58' y='16' width='16' height='62' rx='4'/%3E%3Cpolygon points='40,58 40,44 58,26 58,40'/%3E%3C/g%3E%3C/svg%3E"/>
   <link rel="canonical" href="https://hustleledger-five.vercel.app/posts/cloud-sourced-notetaking-empire">
   <meta property="og:title" content="From Lecture to A-Grade: The Complete AI Note-Taking Pipeline">
     <meta property="og:description" content="Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.">
@@ -114,6 +114,9 @@
   </script>
   <style>
     .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    body .text-primary, body .text-primary\/30, body .text-primary\/60 { color: #c47fff; }
+    body .hover\:text-primary:hover { color: #c47fff; }
+    body .group:hover .group-hover\:text-primary { color: #c47fff; }
     .bento-glow { box-shadow: 0px 4px 20px rgba(143, 0, 255, 0.15); }
     .bento-card-glow { box-shadow: 0px 4px 20px rgba(143, 0, 255, 0.1); }
     .bento-border { border-top: 1px solid rgba(255, 255, 255, 0.1); }
@@ -173,7 +176,7 @@
   <header class="hidden md:block bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
     <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto gap-4">
       <div class="flex items-center gap-8 w-full md:w-auto">
-        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</a>
+        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
         <nav class="hidden lg:flex items-center gap-6">
           <a href="/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Home</a>
           <a href="/posts/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Posts</a>
@@ -189,7 +192,7 @@
   <!-- Mobile Header (simplified) -->
   <header class="md:hidden bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
     <div class="flex justify-between items-center w-full px-4 py-4 max-w-container-max mx-auto">
-      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</a>
+      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
       <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-3 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all">Subscribe</a>
     </div>
   </header>
@@ -221,7 +224,7 @@
     </div>
   </aside><div class="post-center lg:col-span-8"><section class="neon-border-gradient p-8 rounded-xl mb-12 bg-surface-container-lowest">
     <div class="flex items-center gap-3 mb-4 text-secondary-container">
-      <span class="material-symbols-outlined">bolt</span>
+      <span aria-hidden="true" class="material-symbols-outlined">bolt</span>
       <h2 class="font-display text-headline-md font-bold tracking-tight">TL;DR: The Short</h2>
     </div>
     <p class="text-body-lg leading-relaxed" style="color:#e5d9ec;">Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.</p>
@@ -235,12 +238,12 @@
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div><article class="article-content font-body-lg leading-relaxed" style="color:#e5d9ec;"><p>I spent my first two years of university taking notes the traditional way — laptop open, frantically typing everything the professor said, missing half the discussion because I was looking at my keyboard. My grades were average, my notes were unusable by exam week, and I was chronically behind on readings.</p><p>Last fall, I rebuilt my entire note-taking workflow around AI tools. The result: my GPA went from 3.1 to 3.8, I stopped pulling all-nighters before exams, and for the first time, I actually had time for a social life.</p><p>Here's the exact system, step by step.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-0" class="scroll-mt-28"></span>Step 1: Capture (During Lecture)</h2>
     </div><p>Open <strong>Otter.ai</strong> on your phone, tap record, and put your phone face-down on the desk. That's it. Don't touch it again until class ends.</p><p>Otter transcribes everything in real time. It identifies different speakers (professor vs. student questions). It generates a rough summary automatically.</p><p>Cost: Free (300 minutes per month, which covers about 10 lecture hours).</p><p>The key insight: do not take notes during lecture. Just listen. The transcription handles capture. Your job is comprehension.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-1" class="scroll-mt-28"></span>Step 2: Process (10 minutes, after lecture)</h2>
     </div><p>Export the Otter transcript as text. Create a new <strong>Google NotebookLM</strong> notebook for this lecture. Upload:</p><ol>
@@ -253,12 +256,12 @@
 <li>"What concepts from this lecture connect to last week's material?"</li>
 </ul><p>Copy the Q&A into an <strong>Anki</strong> deck for spaced repetition review later.</p><p>Cost: NotebookLM is free. Anki is free.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-2" class="scroll-mt-28"></span>Step 3: Review (5 minutes, before next class)</h2>
     </div><p>Open your Anki deck. Review the cards from last lecture. Anki shows you cards you're struggling with more often and cards you know less often. Total time: 5 minutes.</p><p>This is the step most students skip, and it's the most important one. Research shows that reviewing material within 24 hours of learning it improves retention by 50% or more. Anki automates this so you don't have to think about scheduling.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-3" class="scroll-mt-28"></span>Step 4: Write (For essays and assignments)</h2>
     </div><p>When you have a paper due, open your NotebookLM notebooks for the relevant lectures. Ask NotebookLM to:</p><ul>
@@ -266,7 +269,7 @@
 <li>"Find counterarguments and limitations mentioned in the sources."</li>
 </ul><p>Then open <strong>Claude</strong> (free tier). Paste the NotebookLM output and ask Claude to help structure your argument. Claude excels at long-form reasoning and essay structure.</p><p>Write your draft in Claude's interface, then copy to Google Docs.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">format_list_numbered</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-4" class="scroll-mt-28"></span>Step 5: Polish (Before submission)</h2>
     </div><p>Run your draft through <strong>Grammarly</strong> (free). It catches:</p><ul>
@@ -276,7 +279,7 @@
 <li>Overused words</li>
 </ul><p>One pass through Grammarly typically improves a B paper to a B+ or A- just by cleaning up the writing.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">assessment</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">assessment</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-5" class="scroll-mt-28"></span>The Results After One Semester</h2>
     </div><ul>
@@ -286,17 +289,17 @@
 <li>GPA: 3.8 (was 3.1)</li>
 </ul><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-6" class="scroll-mt-28"></span>Why This Works</h2>
     </div><p>The traditional note-taking model assumes you have to choose between understanding (listening in class) and capture (writing things down). AI tools break that trade-off. You capture everything automatically and process it later with AI assistance.</p><p>The pipeline doesn't skip the learning — it removes the mechanical overhead so you can focus on actual understanding.</p><div class="tier-card mt-12 mb-6">
       <div class="flex items-center gap-3 mb-3">
-        <span class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
+        <span aria-hidden="true" class="material-symbols-outlined text-primary text-2xl">auto_awesome</span>
       </div>
       <h2 class="font-display text-headline-md text-on-surface" style="border:none;padding:0;margin:0;"><span id="section-7" class="scroll-mt-28"></span>Try It For Two Weeks</h2>
     </div><p>Commit to this pipeline for two weeks. Download Otter, set up NotebookLM, install Anki. After two weeks, compare your comprehension and time spent against your current method. Most students who try this never go back.</p></article><section class="mt-24 p-8 bg-surface-container rounded-2xl border border-outline-variant/20 flex flex-col md:flex-row gap-8 items-center md:items-start">
     <div class="w-20 h-20 rounded-full overflow-hidden shrink-0 border-2 border-primary bg-surface-container-highest flex items-center justify-center">
-      <span class="material-symbols-outlined text-4xl text-primary">person</span>
+      <span aria-hidden="true" class="material-symbols-outlined text-4xl text-primary">person</span>
     </div>
     <div>
       <h4 class="font-display text-headline-md text-on-surface mb-2">Written by Maya Chen</h4>
@@ -311,7 +314,7 @@
         <h3 class="font-display text-headline-md font-bold text-on-surface mb-2">Weekly insights for the modern student</h3>
         <p class="text-body-md text-on-surface-variant max-w-lg">Get the HustleLedger newsletter — no spam, just strategy.</p>
       </div>
-      <a href="https://hustleledger.substack.com" target="_blank" class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20 whitespace-nowrap flex items-center gap-2">Subscribe Free <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+      <a href="https://hustleledger.substack.com" target="_blank" class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20 whitespace-nowrap flex items-center gap-2">Subscribe Free <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </div>
   </section><section class="mt-24">
     <h3 class="font-display text-headline-md text-on-surface mb-8">Related Vibes</h3>
@@ -338,7 +341,7 @@
   <footer class="hidden md:block w-full py-12 px-margin-desktop mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto items-center">
       <div class="md:col-span-4">
-        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</div>
+        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
         <p class="text-on-surface-variant/70 text-body-md">&copy; 2026 HustleLedger Ecosystem. All rights reserved.</p>
       </div>
       <div class="md:col-span-8 flex flex-wrap justify-end gap-8">
@@ -354,7 +357,7 @@
   <!-- Mobile Footer (compact) -->
   <footer class="md:hidden w-full px-4 py-8 mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
     <div class="text-center">
-      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none"><rect width="100" height="100" rx="24" fill="#1a1723"/><g stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="20" x2="22" y2="80" stroke="#8F00FF" stroke-width="10"/><line x1="78" y1="20" x2="78" y2="80" stroke="#00FFAB" stroke-width="10"/><polyline points="22,50 48,50 38,68 78,50" stroke="#8F00FF" stroke-width="8" fill="none"/><line x1="78" y1="80" x2="92" y2="80" stroke="#00FFAB" stroke-width="8"/></g></svg>HustleLedger</div>
+      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
       <div class="flex justify-center gap-4 mb-3">
         <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/posts/">Posts</a>
         <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/tags/">Tags</a>
