@@ -1,14 +1,5 @@
 [
   {
-    "title": "Sub",
-    "slug": "__refactor_sub__",
-    "description": "",
-    "og_image": "",
-    "date": "2026-07-31",
-    "author": "HustleLedger Staff",
-    "read_time": "5 min"
-  },
-  {
     "title": "Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught",
     "slug": "the-ai-policy-lie",
     "description": "Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.",
@@ -52,5 +43,14 @@
     "date": "2026-04-10",
     "author": "Lena Okafor",
     "read_time": "8 min"
+  },
+  {
+    "title": "Research Like a PhD: Primary Sources, Academic Databases & AI",
+    "slug": "digital-wingman-ai",
+    "description": "Stop relying on Google Scholar alone. How to find real primary sources, use academic databases effectively, and leverage AI without crossing ethical lines.",
+    "og_image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200",
+    "date": "",
+    "author": "Dr. Aris Vane",
+    "read_time": "9 min"
   }
 ]
