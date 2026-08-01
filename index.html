@@ -43,21 +43,21 @@
       '--hl-primary-fixed-dim:#E3B6FF;--hl-text-primary:#6F00CF;',
       '}',
       'html.dark{',
-      '--hl-on-background:#eadff0;--hl-surface-container-high:#2e2734;--hl-on-surface:#eadff0;',
+      '--hl-on-background:#e9e9ee;--hl-surface-container-high:#2c2c33;--hl-on-surface:#e9e9ee;',
       '--hl-on-primary-fixed:#2b0053;--hl-secondary-fixed:#4dffb2;--hl-primary-container:#8f00ff;',
-      '--hl-inverse-surface:#eadff0;--hl-on-tertiary-fixed:#321200;--hl-error-container:#93000a;',
-      '--hl-inverse-primary:#8600ef;--hl-on-secondary-container:#007149;--hl-surface:#181622;',
-      '--hl-outline:#988ca2;--hl-on-error-container:#ffdad6;--hl-on-error:#690005;',
-      '--hl-on-tertiary-container:#ffddcb;--hl-surface-container-low:#1e1b24;--hl-background:#181622;',
+      '--hl-inverse-surface:#e9e9ee;--hl-on-tertiary-fixed:#321200;--hl-error-container:#93000a;',
+      '--hl-inverse-primary:#8600ef;--hl-on-secondary-container:#007149;--hl-surface:#212126;',
+      '--hl-outline:#63636b;--hl-on-error-container:#ffdad6;--hl-on-error:#690005;',
+      '--hl-on-tertiary-container:#ffddcb;--hl-surface-container-low:#27272d;--hl-background:#212126;',
       '--hl-on-primary:#ffffff;--hl-secondary:#00FFAB;--hl-error:#ffb4ab;--hl-surface-tint:#dab9ff;',
-      '--hl-on-secondary:#003822;--hl-surface-container-highest:#2d2836;--hl-secondary-fixed-dim:#00e297;',
-      '--hl-on-tertiary-fixed-variant:#753400;--hl-primary:#8F00FF;--hl-surface-dim:#181622;',
-      '--hl-inverse-on-surface:#342e3b;--hl-tertiary-fixed:#ffdbc8;--hl-surface-container:#1e1c26;',
+      '--hl-on-secondary:#003822;--hl-surface-container-highest:#33333b;--hl-secondary-fixed-dim:#00e297;',
+      '--hl-on-tertiary-fixed-variant:#753400;--hl-primary:#8F00FF;--hl-surface-dim:#212126;',
+      '--hl-inverse-on-surface:#3b3b43;--hl-tertiary-fixed:#ffdbc8;--hl-surface-container:#2a2a31;',
       '--hl-on-primary-fixed-variant:#6500b8;--hl-primary-fixed:#efdbff;--hl-on-secondary-fixed-variant:#005234;',
-      '--hl-tertiary:#ffb68b;--hl-surface-container-lowest:#100e15;--hl-surface-bright:#3d3744;',
-      '--hl-tertiary-container:#a44c00;--hl-secondary-container:#00FFAB;--hl-surface-variant:#2d2836;',
-      '--hl-on-tertiary:#522300;--hl-tertiary-fixed-dim:#ffb68b;--hl-outline-variant:#4d4356;',
-      '--hl-on-secondary-fixed:#002112;--hl-on-surface-variant:#cfc2d9;--hl-on-primary-container:#efddff;',
+      '--hl-tertiary:#ffb68b;--hl-surface-container-lowest:#1a1a1f;--hl-surface-bright:#43434c;',
+      '--hl-tertiary-container:#a44c00;--hl-secondary-container:#00FFAB;--hl-surface-variant:#2f2f37;',
+      '--hl-on-tertiary:#522300;--hl-tertiary-fixed-dim:#ffb68b;--hl-outline-variant:#38383f;',
+      '--hl-on-secondary-fixed:#002112;--hl-on-surface-variant:#c6c5cc;--hl-on-primary-container:#efddff;',
       '--hl-primary-fixed-dim:#dab9ff;--hl-text-primary:#c47fff;',
       '}'
     ].join('\n');
@@ -164,8 +164,8 @@
     body .text-primary, body .text-primary\/30, body .text-primary\/60 { color: var(--hl-text-primary); }
     body .hover\:text-primary:hover { color: var(--hl-text-primary); }
     body .group:hover .group-hover\:text-primary { color: var(--hl-text-primary); }
-    .bento-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 15%, transparent); }
-    .bento-card-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 10%, transparent); }
+    .bento-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 8%, transparent); }
+    .bento-card-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 5%, transparent); }
     .bento-border { border-top: 1px solid var(--hl-outline-variant); }
     .active-glow { box-shadow: 0px 0px 15px color-mix(in srgb, var(--hl-secondary) 40%, transparent); }
     .neon-border-gradient {
@@ -175,6 +175,95 @@
     }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .carousel-dot { width: 0.625rem; height: 0.625rem; border-radius: 9999px; background: color-mix(in srgb, var(--hl-outline-variant) 60%, transparent); transition: all 0.3s ease; }
+    .carousel-dot:hover { background: color-mix(in srgb, var(--hl-primary) 60%, transparent); }
+    .carousel-dot.active { width: 1.5rem; background: var(--hl-text-primary); }
+    html.dark { color-scheme: dark; }
+    /* The Tailwind CDN does not generate opacity utilities for colors defined
+       as var() (border-outline-variant/30 etc.), so those borders fall back to
+       Tailwind's near-white default. Pin the intended final colors explicitly. */
+    .border-outline-variant\/10 { border-color: #efeaf4; }
+    .border-outline-variant\/20 { border-color: #e9e3f0; }
+    .border-outline-variant\/30 { border-color: #e2dce9; }
+    .border-outline-variant\/40 { border-color: #dbd4e2; }
+    .border-outline-variant\/50 { border-color: #d4cce0; }
+    html.dark .border-outline-variant\/10 { border-color: #2e2e35; }
+    html.dark .border-outline-variant\/20 { border-color: #34343c; }
+    html.dark .border-outline-variant\/30 { border-color: #3a3a42; }
+    html.dark .border-outline-variant\/40 { border-color: #41414a; }
+    html.dark .border-outline-variant\/50 { border-color: #484851; }
+    .border-primary\/20 { border-color: #e5c6ff; }
+    .border-primary\/30 { border-color: #dbadff; }
+    .border-primary\/40 { border-color: #d094ff; }
+    .border-primary\/50 { border-color: #c57cff; }
+    .border-primary\/60 { border-color: #ba63ff; }
+    html.dark .border-primary\/20 { border-color: #371a51; }
+    html.dark .border-primary\/30 { border-color: #421767; }
+    html.dark .border-primary\/40 { border-color: #4d147d; }
+    html.dark .border-primary\/50 { border-color: #581092; }
+    html.dark .border-primary\/60 { border-color: #630da8; }
+    .hover\:border-primary\/40:hover, .hover\:border-primary\/50:hover, .hover\:border-primary\/60:hover { border-color: #6f00cf; }
+    html.dark .hover\:border-primary\/40:hover, html.dark .hover\:border-primary\/50:hover, html.dark .hover\:border-primary\/60:hover { border-color: #c47fff; }
+    .focus\:border-primary\/50:focus { border-color: #6f00cf; }
+    html.dark .focus\:border-primary\/50:focus { border-color: #c47fff; }
+    .bg-primary\/10 { background-color: #e5d3f4; }
+    .bg-primary\/15 { background-color: #e1c8f5; }
+    .bg-primary\/20 { background-color: #dcbcf5; }
+    .bg-primary\/30 { background-color: #d2a5f7; }
+    html.dark .bg-primary\/10 { background-color: #342646; }
+    html.dark .bg-primary\/15 { background-color: #392450; }
+    html.dark .bg-primary\/20 { background-color: #3e225a; }
+    html.dark .bg-primary\/30 { background-color: #481d6f; }
+    .from-primary\/5 {
+      --tw-gradient-from: #eadff4 var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(234 223 244 / 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    .to-secondary\/5 { --tw-gradient-to: #e3ecef var(--tw-gradient-to-position); }
+    html.dark .from-primary\/5 {
+      --tw-gradient-from: #2f283b var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(47 40 59 / 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    html.dark .to-secondary\/5 { --tw-gradient-to: #283537 var(--tw-gradient-to-position); }
+    .text-on-surface-variant\/30 { color: #c4c0c9; }
+    .text-on-surface-variant\/40 { color: #b2adb7; }
+    .text-on-surface-variant\/50 { color: #a09aa6; }
+    .text-on-surface-variant\/60 { color: #8d8894; }
+    .text-on-surface-variant\/70 { color: #7b7682; }
+    html.dark .text-on-surface-variant\/30 { color: #535258; }
+    html.dark .text-on-surface-variant\/40 { color: #636368; }
+    html.dark .text-on-surface-variant\/50 { color: #737379; }
+    html.dark .text-on-surface-variant\/60 { color: #84838a; }
+    html.dark .text-on-surface-variant\/70 { color: #94949a; }
+    .placeholder\:text-on-surface-variant\/40::placeholder { color: #b2adb7; }
+    html.dark .placeholder\:text-on-surface-variant\/40::placeholder { color: #636368; }
+    .shadow-primary\/5 { box-shadow: 0 10px 15px -3px rgb(143 0 255 / 0.05), 0 4px 6px -4px rgb(143 0 255 / 0.05); }
+    .shadow-primary\/10 { box-shadow: 0 4px 20px rgb(143 0 255 / 0.10); }
+    .shadow-primary\/20 { box-shadow: 0 10px 15px -3px rgb(143 0 255 / 0.20), 0 4px 6px -4px rgb(143 0 255 / 0.20); }
+    html.dark .shadow-primary\/5 { box-shadow: 0 10px 15px -3px rgb(196 127 255 / 0.07), 0 4px 6px -4px rgb(196 127 255 / 0.07); }
+    html.dark .shadow-primary\/10 { box-shadow: 0 4px 20px rgb(196 127 255 / 0.12); }
+    html.dark .shadow-primary\/20 { box-shadow: 0 10px 15px -3px rgb(196 127 255 / 0.25), 0 4px 6px -4px rgb(196 127 255 / 0.25); }
+    .focus\:ring-primary\/20:focus { box-shadow: 0 0 0 2px rgb(143 0 255 / 0.20); }
+    html.dark .focus\:ring-primary\/20:focus { box-shadow: 0 0 0 2px rgb(196 127 255 / 0.20); }
+    .border-error\/30 { border-color: #dfacb2; }
+    html.dark .border-error\/30 { border-color: #624a4e; }
+    .bg-error\/10 { background-color: #ead6dd; }
+    .bg-error\/20 { background-color: #e4c1c8; }
+    html.dark .bg-error\/10 { background-color: #342b33; }
+    html.dark .bg-error\/20 { background-color: #4b3a41; }
+    .text-error\/50 { color: #db898d; }
+    .text-error\/60 { color: #d47276; }
+    .text-error\/80 { color: #c74648; }
+    html.dark .text-error\/50 { color: #8c6567; }
+    html.dark .text-error\/60 { color: #a37574; }
+    html.dark .text-error\/80 { color: #d19490; }
+    .bg-secondary-container\/20 { background-color: #e3eced; }
+    .bg-secondary-container\/30 { background-color: #ddedea; }
+    html.dark .bg-secondary-container\/20 { background-color: #184941; }
+    html.dark .bg-secondary-container\/30 { background-color: #15604e; }
+    .bg-surface\/80 { background-color: #f9f5fd; }
+    html.dark .bg-surface\/80 { background-color: #191723; }
     .reading-progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 100; background: color-mix(in srgb, var(--hl-outline) 20%, transparent); }
     .reading-progress-bar { height: 100%; width: 0%; background: var(--hl-primary); box-shadow: 0 0 10px var(--hl-primary); transition: width 0.1s linear; }
     .ad-min-height { min-height: 90px; }
@@ -219,171 +308,233 @@
     <div class="reading-progress-bar" id="progressBar"></div>
   </div>
 
-  <!-- Desktop Header -->
-  <header class="hidden md:block bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
-    <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto gap-4">
-      <div class="flex items-center gap-8 w-full md:w-auto">
-        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
-        <nav class="hidden lg:flex items-center gap-6">
-          <a href="/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Home</a>
-          <a href="/posts/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Posts</a>
-          <a href="/tags/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Tags</a>
-          <a href="/categories/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Categories</a>
-          <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-4 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all uppercase tracking-widest font-bold">Subscribe</a>
+  <!-- Header: transparent, logo left + menu button right -->
+  <header class="relative z-50">
+    <div class="flex items-center justify-between w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-5">
+      <a href="/" class="font-display text-headline-md font-bold text-primary whitespace-nowrap flex items-center gap-2.5" aria-label="HustleLedger home">
+        <svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <g style="fill:var(--hl-text-primary)">
+            <rect x="24" y="30" width="16" height="48" rx="4"/>
+            <rect x="58" y="16" width="16" height="62" rx="4"/>
+            <polygon points="40,58 40,44 58,26 58,40"/>
+          </g>
+        </svg>
+        HustleLedger
+      </a>
+      <div class="relative">
+        <button id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu" class="w-10 h-10 rounded-full border border-outline-variant/40 flex items-center justify-center hover:border-primary/50 hover:bg-surface-container transition-all">
+          <span aria-hidden="true" class="material-symbols-outlined text-primary">menu</span>
+        </button>
+        <nav id="navPanel" class="hidden absolute right-0 top-12 w-56 rounded-xl bg-surface-container border border-outline-variant/30 shadow-lg shadow-primary/10 py-2 z-50">
+          <a href="/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Home</a>
+          <a href="/posts/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Posts</a>
+          <a href="/tags/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Tags</a>
+          <a href="/categories/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Categories</a>
+          <a href="/about/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">About</a>
+          <a href="/author" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Become an Author</a>
+          <a href="https://hustleledger.substack.com" target="_blank" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Subscribe</a>
         </nav>
       </div>
-
     </div>
   </header>
 
-  <!-- Mobile Header (simplified) -->
-  <header class="md:hidden bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
-    <div class="flex justify-between items-center w-full px-4 py-4 max-w-container-max mx-auto">
-      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
-      <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-3 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all">Subscribe</a>
+  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-16">
+    <section class="mb-14 md:mb-24 max-w-3xl mx-auto pt-6 md:pt-10">
+    <div class="relative">
+      <span aria-hidden="true" class="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-outline">search</span>
+      <input id="postSearch" class="w-full bg-surface-container border border-outline-variant/30 rounded-full py-4 md:py-5 pl-14 pr-5 text-body-md md:text-body-lg text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search posts by title or tag..." type="text" autocomplete="off">
     </div>
-  </header>
-
-  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 md:py-12">
-    <section class="text-center py-12 md:py-20">
-    <h1 class="font-display text-4xl md:text-6xl font-bold text-on-surface mb-4 md:mb-6 leading-tight">
-      Smart Strategies for the<br>
-      <span class="text-primary">Modern Student</span>
-    </h1>
-    <p class="text-body-lg text-on-surface-variant max-w-2xl mx-auto mb-8 md:mb-10 px-4">
-      HustleLedger is your guide to navigating university life — from AI tools and productivity hacks to campus strategies and student culture.
-    </p>
-    <a href="/posts/" class="inline-block bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20">
-      <span class="flex items-center gap-2">Explore Posts <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span></span>
-    </a>
-  </section>
-  <section class="max-w-4xl mx-auto mt-8 md:mt-20 mb-12 md:mb-20">
+    <p id="noResults" class="text-center text-body-md text-on-surface-variant/50 mt-16 hidden">No posts match your search.</p>
+  </section><section class="mb-16 md:mb-24 max-w-3xl mx-auto">
+    <h2 class="font-display text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface text-center mb-8 md:mb-10">Latest Posts</h2>
+    <div id="latestCarousel" class="relative overflow-hidden">
+      <div id="latestTrack" class="flex gap-6 transition-transform duration-700 ease-out">
+<a href="/posts/the-ai-policy-lie" class="w-[320px] md:w-[384px] shrink-0 rounded-2xl bg-surface-container border border-outline-variant/30 overflow-hidden bento-glow bento-border group block" data-title="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" data-slug="the-ai-policy-lie" data-tags="the-survival-guide ai career productivity study-hacks">
+    <div class="aspect-video w-full overflow-hidden relative">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200" alt="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" loading="lazy">
+    </div>
+    <div class="p-5">
+      <h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2 group-hover:text-primary transition-colors">Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught</h3>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
+        <span>May 18, 2026</span>
+        <span class="text-outline">·</span>
+        <span>9 min read</span>
+        <span class="text-outline">·</span>
+        <span>Jake Morrison</span>
+      </div>
+      <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.</p>
+      <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Career</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
+    </div>
+  </a>
+<a href="/posts/the-student-ai-stack" class="w-[320px] md:w-[384px] shrink-0 rounded-2xl bg-surface-container border border-outline-variant/30 overflow-hidden bento-glow bento-border group block" data-title="The Student AI Stack: 7 Free Tools That Save 10 Hours a Week" data-slug="the-student-ai-stack" data-tags="the-toolkit ai productivity study-hacks">
+    <div class="aspect-video w-full overflow-hidden relative">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200" alt="The Student AI Stack: 7 Free Tools That Save 10 Hours a Week" loading="lazy">
+    </div>
+    <div class="p-5">
+      <h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2 group-hover:text-primary transition-colors">The Student AI Stack: 7 Free Tools That Save 10 Hours a Week</h3>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
+        <span>May 1, 2026</span>
+        <span class="text-outline">·</span>
+        <span>10 min read</span>
+        <span class="text-outline">·</span>
+        <span>Maya Chen</span>
+      </div>
+      <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Most students are running 8-15 different apps for school. You only need 7, all free, and they integrate into a single pipeline that cuts your weekly study time by 30-40%.</p>
+      <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Toolkit</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
+    </div>
+  </a>
+<a href="/posts/priority-lab-access-hidden-api" class="w-[320px] md:w-[384px] shrink-0 rounded-2xl bg-surface-container border border-outline-variant/30 overflow-hidden bento-glow bento-border group block" data-title="The $600/Mo Side Hustle: Selling Digital Products as a Student" data-slug="priority-lab-access-hidden-api" data-tags="the-grind side-hustle passive-income finance">
+    <div class="aspect-video w-full overflow-hidden relative">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200" alt="The $600/Mo Side Hustle: Selling Digital Products as a Student" loading="lazy">
+    </div>
+    <div class="p-5">
+      <h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2 group-hover:text-primary transition-colors">The $600/Mo Side Hustle: Selling Digital Products as a Student</h3>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
+        <span>Apr 20, 2026</span>
+        <span class="text-outline">·</span>
+        <span>10 min read</span>
+        <span class="text-outline">·</span>
+        <span>Ravi Patel</span>
+      </div>
+      <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Sell digital products (study guides, templates, Notion dashboards) on Gumroad or Etsy. Create once, earn $200-$2,000/month passively. No inventory, no shipping, no customer service after setup.</p>
+      <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Grind</span><span class="text-label-sm text-primary/60">#Side Hustle</span><span class="text-label-sm text-primary/60">#Passive Income</span><span class="text-label-sm text-primary/60">#Finance</span></div>
+    </div>
+  </a>
+<a href="/posts/cloud-sourced-notetaking-empire" class="w-[320px] md:w-[384px] shrink-0 rounded-2xl bg-surface-container border border-outline-variant/30 overflow-hidden bento-glow bento-border group block" data-title="From Lecture to A-Grade: The Complete AI Note-Taking Pipeline" data-slug="cloud-sourced-notetaking-empire" data-tags="the-survival-guide ai productivity study-hacks">
+    <div class="aspect-video w-full overflow-hidden relative">
+      <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200" alt="From Lecture to A-Grade: The Complete AI Note-Taking Pipeline" loading="lazy">
+    </div>
+    <div class="p-5">
+      <h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2 group-hover:text-primary transition-colors">From Lecture to A-Grade: The Complete AI Note-Taking Pipeline</h3>
+      <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
+        <span>Apr 15, 2026</span>
+        <span class="text-outline">·</span>
+        <span>9 min read</span>
+        <span class="text-outline">·</span>
+        <span>Maya Chen</span>
+      </div>
+      <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.</p>
+      <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
+    </div>
+  </a>
+        <a href="/posts/" class="w-[320px] md:w-[384px] shrink-0 rounded-2xl border-2 border-dashed border-outline-variant/40 hover:border-primary/60 bg-surface-container-low flex flex-col items-center justify-center gap-3 text-center p-6 group transition-all min-h-[240px]">
+          <span aria-hidden="true" class="material-symbols-outlined text-5xl text-primary group-hover:scale-110 transition-transform">grid_view</span>
+          <span class="font-display text-headline-md font-bold text-on-surface group-hover:text-primary transition-colors">View All Posts</span>
+          <span class="text-label-sm text-on-surface-variant/60">Browse the full archive →</span>
+        </a>
+      </div>
+      <button data-carousel-prev type="button" aria-label="Previous posts" class="absolute left-2 md:-left-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface-container border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all"><span aria-hidden="true" class="material-symbols-outlined text-lg">chevron_left</span></button>
+      <button data-carousel-next type="button" aria-label="Next posts" class="absolute right-2 md:-right-4 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-surface-container border border-outline-variant/40 flex items-center justify-center text-on-surface-variant hover:border-primary/50 hover:text-primary transition-all"><span aria-hidden="true" class="material-symbols-outlined text-lg">chevron_right</span></button>
+    </div>
+    <div id="carouselDots" class="flex justify-center gap-2.5 mt-6" aria-label="Latest posts slides"></div>
+  </section><section class="mb-16 md:mb-24 max-w-3xl mx-auto">
     <div class="text-center mb-10">
       <span class="text-label-sm text-primary uppercase tracking-widest font-bold">Topics</span>
       <h2 class="font-display text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mt-2">Explore by Category</h2>
       <p class="text-body-md text-on-surface-variant mt-2 max-w-md mx-auto">Find what you're looking for across our curated topics.</p>
     </div>
-    <div class="flex flex-wrap justify-center gap-4 px-4">
-      <a href="/categories/the-survival-guide" class="group bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all flex-1 min-w-[160px] max-w-[240px]">
+    <div class="flex flex-wrap justify-center gap-gutter">
+      <a href="/categories/the-survival-guide" class="group w-full sm:w-[220px] md:w-[240px] bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all">
         <span aria-hidden="true" class="material-symbols-outlined text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all mx-auto">local_hospital</span>
         <h3 class="font-display text-headline-md font-bold text-on-surface group-hover:text-primary transition-colors">Survival Guide</h3>
         <p class="text-label-sm text-on-surface-variant/60 mt-1.5">4 articles</p>
       </a>
-      <a href="/categories/the-grind" class="group bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all flex-1 min-w-[160px] max-w-[240px]">
+      <a href="/categories/the-grind" class="group w-full sm:w-[220px] md:w-[240px] bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all">
         <span aria-hidden="true" class="material-symbols-outlined text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all mx-auto">trending_up</span>
         <h3 class="font-display text-headline-md font-bold text-on-surface group-hover:text-primary transition-colors">The Grind</h3>
         <p class="text-label-sm text-on-surface-variant/60 mt-1.5">1 article</p>
       </a>
-      <a href="/categories/the-toolkit" class="group bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all flex-1 min-w-[160px] max-w-[240px]">
+      <a href="/categories/the-toolkit" class="group w-full sm:w-[220px] md:w-[240px] bg-surface-container border border-outline-variant/30 rounded-xl p-6 md:p-8 text-center hover:border-primary/40 hover:bg-surface-container-high hover:shadow-lg hover:shadow-primary/5 transition-all">
         <span aria-hidden="true" class="material-symbols-outlined text-2xl w-10 h-10 flex items-center justify-center rounded-lg bg-primary/10 text-primary mb-4 group-hover:bg-primary group-hover:text-on-primary transition-all mx-auto">build</span>
         <h3 class="font-display text-headline-md font-bold text-on-surface group-hover:text-primary transition-colors">The Toolkit</h3>
         <p class="text-label-sm text-on-surface-variant/60 mt-1.5">1 article</p>
       </a>
     </div>
-  </section><hr class="border-outline-variant/20 my-8 md:my-12 max-w-3xl mx-auto"><section class="mb-8 md:mb-12 max-w-xl mx-auto">
-    <div class="relative">
-      <span aria-hidden="true" class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-outline">search</span>
-      <input id="postSearch" class="w-full bg-surface-container border border-outline-variant/30 rounded-full py-3 pl-12 pr-4 text-body-md text-on-surface placeholder:text-on-surface-variant/40 focus:outline-none focus:border-primary/50 focus:ring-2 focus:ring-primary/20 transition-all" placeholder="Search posts by title or tag..." type="text" autocomplete="off">
+  </section><section class="mb-16 md:mb-24 max-w-3xl mx-auto text-center">
+    <span class="text-label-sm text-primary uppercase tracking-widest font-bold">About</span>
+    <h2 class="font-display text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mt-2 mb-4">Welcome to HustleLedger</h2>
+    <p class="text-body-md md:text-body-lg text-on-surface-variant leading-relaxed mb-8">
+      HustleLedger is a student-run publication covering the realities of modern university life — AI tools, productivity systems, side hustles, and campus culture. We read, we test, we report back.
+    </p>
+    <div class="grid grid-cols-3 gap-gutter max-w-xl mx-auto">
+      <div class="bg-surface-container-low border border-outline-variant/20 rounded-xl py-5">
+        <p class="font-display text-2xl md:text-3xl font-bold text-primary">6</p>
+        <p class="text-label-sm text-on-surface-variant/60 mt-1">Posts</p>
+      </div>
+      <div class="bg-surface-container-low border border-outline-variant/20 rounded-xl py-5">
+        <p class="font-display text-2xl md:text-3xl font-bold text-primary">5</p>
+        <p class="text-label-sm text-on-surface-variant/60 mt-1">Authors</p>
+      </div>
+      <div class="bg-surface-container-low border border-outline-variant/20 rounded-xl py-5">
+        <p class="font-display text-2xl md:text-3xl font-bold text-primary">3</p>
+        <p class="text-label-sm text-on-surface-variant/60 mt-1">Categories</p>
+      </div>
     </div>
-    <div class="flex items-center justify-between mt-3 px-2">
-      <span id="searchCount" class="text-label-sm text-on-surface-variant/50">6 posts</span>
-      <a href="/tags/" class="text-label-sm text-primary hover:underline">Browse all tags →</a>
+  </section><section class="mb-16 md:mb-24 max-w-3xl mx-auto">
+    <div class="text-center mb-8">
+      <span class="text-label-sm text-primary uppercase tracking-widest font-bold">The Team</span>
+      <h2 class="font-display text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mt-2">Our Authors</h2>
     </div>
-    <p id="noResults" class="text-center text-body-md text-on-surface-variant/50 mt-16 hidden">No posts match your search.</p>
-  </section><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter" id="bentoGridInner"><a href="/posts/the-ai-policy-lie" class="md:col-span-8 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" data-slug="the-ai-policy-lie" data-tags="the-survival-guide ai career productivity study-hacks">
-        <div class="aspect-video md:aspect-[21/9] w-full overflow-hidden relative">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1633613286991-611fe299c4be?w=1200" alt="Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught" loading="lazy">
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="/authors/maya-chen" class="group flex items-center gap-2.5 bg-surface-container border border-outline-variant/30 rounded-full pl-1.5 pr-4 py-1.5 hover:border-primary/50 hover:bg-surface-container-high transition-all">
+        <span class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">MC</span>
+        <span class="text-label-sm font-bold text-on-surface group-hover:text-primary transition-colors">Maya Chen</span>
+        <span class="text-label-sm text-on-surface-variant/50">· 2</span>
+      </a>
+      <a href="/authors/dr-aris-vane" class="group flex items-center gap-2.5 bg-surface-container border border-outline-variant/30 rounded-full pl-1.5 pr-4 py-1.5 hover:border-primary/50 hover:bg-surface-container-high transition-all">
+        <span class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">DA</span>
+        <span class="text-label-sm font-bold text-on-surface group-hover:text-primary transition-colors">Dr. Aris Vane</span>
+        <span class="text-label-sm text-on-surface-variant/50">· 1</span>
+      </a>
+      <a href="/authors/jake-morrison" class="group flex items-center gap-2.5 bg-surface-container border border-outline-variant/30 rounded-full pl-1.5 pr-4 py-1.5 hover:border-primary/50 hover:bg-surface-container-high transition-all">
+        <span class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">JM</span>
+        <span class="text-label-sm font-bold text-on-surface group-hover:text-primary transition-colors">Jake Morrison</span>
+        <span class="text-label-sm text-on-surface-variant/50">· 1</span>
+      </a>
+      <a href="/authors/lena-okafor" class="group flex items-center gap-2.5 bg-surface-container border border-outline-variant/30 rounded-full pl-1.5 pr-4 py-1.5 hover:border-primary/50 hover:bg-surface-container-high transition-all">
+        <span class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">LO</span>
+        <span class="text-label-sm font-bold text-on-surface group-hover:text-primary transition-colors">Lena Okafor</span>
+        <span class="text-label-sm text-on-surface-variant/50">· 1</span>
+      </a>
+      <a href="/authors/ravi-patel" class="group flex items-center gap-2.5 bg-surface-container border border-outline-variant/30 rounded-full pl-1.5 pr-4 py-1.5 hover:border-primary/50 hover:bg-surface-container-high transition-all">
+        <span class="w-8 h-8 rounded-full bg-primary/10 border border-primary/30 text-primary text-label-sm font-bold flex items-center justify-center group-hover:bg-primary group-hover:text-on-primary transition-colors">RP</span>
+        <span class="text-label-sm font-bold text-on-surface group-hover:text-primary transition-colors">Ravi Patel</span>
+        <span class="text-label-sm text-on-surface-variant/50">· 1</span>
+      </a>
+      <a href="/author" class="group flex items-center gap-2.5 border border-dashed border-outline-variant/40 rounded-full px-4 py-2 hover:border-primary/60 transition-all">
+        <span aria-hidden="true" class="material-symbols-outlined text-lg text-primary">add</span>
+        <span class="text-label-sm font-bold text-on-surface-variant group-hover:text-primary transition-colors">Become an author</span>
+      </a>
+    </div>
+  </section><section class="mb-16 md:mb-24 max-w-3xl mx-auto">
+    <div class="bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-xl p-8 md:p-10">
+      <div class="text-center mb-8">
+        <span class="text-label-sm text-primary uppercase tracking-widest font-bold">Join us</span>
+        <h2 class="font-display text-headline-lg-mobile md:text-headline-lg font-bold text-on-surface mt-2">Become an Author</h2>
+        <p class="text-body-md text-on-surface-variant mt-2 max-w-md mx-auto">Got a story, a hack, or a take? We want to publish it.</p>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="text-center">
+          <span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 font-display font-bold">1</span>
+          <h3 class="font-display text-headline-md font-bold text-on-surface mb-1">Pitch your idea</h3>
+          <p class="text-label-sm text-on-surface-variant/60">Send us a quick summary of what you want to write.</p>
         </div>
-        <div class="p-6 md:p-8">
-          <h2 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg mb-3 md:mb-4 text-primary">Your Professor's AI Policy Is a Lie: How to Use AI Without Getting Caught</h2>
-          <p class="text-on-surface-variant text-body-md mb-4 md:mb-6 max-w-2xl line-clamp-2">Your school's AI policy protects itself, not you. Employers in 2026 expect AI fluency as a default job skill. Use AI as a thinking partner — never a ghostwriter — and learn to document your process so you can defend every word.</p>
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-label-sm">
-            <span class="flex items-center gap-1 text-secondary"><span aria-hidden="true" class="material-symbols-outlined text-[18px]">bolt</span> The Survival Guide</span>
-            <span class="text-outline">·</span><span class="text-on-surface-variant/60">May 18, 2026</span>
-            <span class="text-outline">·</span>
-            <span class="text-on-surface-variant/60">9 min read</span>
-            <span class="text-outline">·</span>
-            <span class="text-on-surface-variant/60">Jake Morrison</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Career</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
+        <div class="text-center">
+          <span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 font-display font-bold">2</span>
+          <h3 class="font-display text-headline-md font-bold text-on-surface mb-1">Get published</h3>
+          <p class="text-label-sm text-on-surface-variant/60">We edit, polish, and ship your article.</p>
         </div>
-      </a><a href="/posts/the-student-ai-stack" class="md:col-span-4 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="The Student AI Stack: 7 Free Tools That Save 10 Hours a Week" data-slug="the-student-ai-stack" data-tags="the-toolkit ai productivity study-hacks">
-        <div class="aspect-video md:aspect-square w-full overflow-hidden relative">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1200" alt="The Student AI Stack: 7 Free Tools That Save 10 Hours a Week" loading="lazy">
+        <div class="text-center">
+          <span class="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center mx-auto mb-3 font-display font-bold">3</span>
+          <h3 class="font-display text-headline-md font-bold text-on-surface mb-1">Reach readers</h3>
+          <p class="text-label-sm text-on-surface-variant/60">Your words, seen by students everywhere.</p>
         </div>
-        <div class="p-4 md:p-6">
-          <h3 class="font-display text-headline-md mb-2 text-on-surface">The Student AI Stack: 7 Free Tools That Save 10 Hours a Week</h3>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
-            <span>May 1, 2026</span>
-            <span class="text-outline">·</span>
-            <span>10 min read</span>
-          </div>
-          <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Most students are running 8-15 different apps for school. You only need 7, all free, and they integrate into a single pipeline that cuts your weekly study time by 30-40%.</p>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Toolkit</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
-        </div>
-      </a><a href="/posts/priority-lab-access-hidden-api" class="md:col-span-4 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="The $600/Mo Side Hustle: Selling Digital Products as a Student" data-slug="priority-lab-access-hidden-api" data-tags="the-grind side-hustle passive-income finance">
-        <div class="aspect-video md:aspect-square w-full overflow-hidden relative">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200" alt="The $600/Mo Side Hustle: Selling Digital Products as a Student" loading="lazy">
-        </div>
-        <div class="p-4 md:p-6">
-          <h3 class="font-display text-headline-md mb-2 text-on-surface">The $600/Mo Side Hustle: Selling Digital Products as a Student</h3>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
-            <span>Apr 20, 2026</span>
-            <span class="text-outline">·</span>
-            <span>10 min read</span>
-          </div>
-          <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Sell digital products (study guides, templates, Notion dashboards) on Gumroad or Etsy. Create once, earn $200-$2,000/month passively. No inventory, no shipping, no customer service after setup.</p>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Grind</span><span class="text-label-sm text-primary/60">#Side Hustle</span><span class="text-label-sm text-primary/60">#Passive Income</span><span class="text-label-sm text-primary/60">#Finance</span></div>
-        </div>
-      </a><a href="/posts/cloud-sourced-notetaking-empire" class="md:col-span-8 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group flex flex-col md:flex-row" data-title="From Lecture to A-Grade: The Complete AI Note-Taking Pipeline" data-slug="cloud-sourced-notetaking-empire" data-tags="the-survival-guide ai productivity study-hacks">
-        <div class="md:w-1/2 overflow-hidden relative min-h-[200px] md:min-h-[250px]">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1200" alt="From Lecture to A-Grade: The Complete AI Note-Taking Pipeline" loading="lazy">
-        </div>
-        <div class="p-6 md:p-8 flex flex-col justify-center md:w-1/2">
-          <h2 class="font-display text-headline-md md:text-headline-lg mb-3 md:mb-4 text-on-surface">From Lecture to A-Grade: The Complete AI Note-Taking Pipeline</h2>
-          <p class="text-on-surface-variant text-body-md mb-4 md:mb-6 line-clamp-2">Record lectures with Otter.ai, upload to NotebookLM, generate study guides and practice questions, write your essay using Claude, and finalize with Grammarly. Total active time per lecture: 20 minutes.</p>
-          <div class="flex flex-wrap items-center gap-x-4 gap-y-1 text-label-sm text-on-surface-variant/60">
-            <span>Apr 15, 2026</span>
-            <span class="text-outline">·</span>
-            <span>9 min read</span>
-            <span class="text-outline">·</span>
-            <span>Maya Chen</span>
-          </div>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Productivity</span><span class="text-label-sm text-primary/60">#Study Hacks</span></div>
-        </div>
-      </a><a href="/posts/the-after-hours-network" class="md:col-span-6 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="How I Automated My Job Applications and Landed 3 Internships" data-slug="the-after-hours-network" data-tags="the-survival-guide ai career networking">
-        <div class="aspect-video md:aspect-[16/9] w-full overflow-hidden relative">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1200" alt="How I Automated My Job Applications and Landed 3 Internships" loading="lazy">
-        </div>
-        <div class="p-5 md:p-6">
-          <h3 class="font-display text-headline-md mb-2 text-on-surface">How I Automated My Job Applications and Landed 3 Internships</h3>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
-            <span>Apr 10, 2026</span>
-            <span class="text-outline">·</span>
-            <span>8 min read</span>
-            <span class="text-outline">·</span>
-            <span>Lena Okafor</span>
-          </div>
-          <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Use AI to tailor every application to the specific role, track your pipeline automatically, and practice interviews with voice-based AI. I sent 47 applications, got 12 interviews, and received 3 offers.</p>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Career</span><span class="text-label-sm text-primary/60">#Networking</span></div>
-        </div>
-      </a><a href="/posts/digital-wingman-ai" class="md:col-span-6 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block" data-title="Research Like a PhD: Primary Sources, Academic Databases &amp; AI" data-slug="digital-wingman-ai" data-tags="the-survival-guide ai research data">
-        <div class="aspect-video md:aspect-[16/9] w-full overflow-hidden relative">
-          <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="https://images.unsplash.com/photo-1507842217343-583bb7270b66?w=1200" alt="Research Like a PhD: Primary Sources, Academic Databases &amp; AI" loading="lazy">
-        </div>
-        <div class="p-5 md:p-6">
-          <h3 class="font-display text-headline-md mb-2 text-on-surface">Research Like a PhD: Primary Sources, Academic Databases &amp; AI</h3>
-          <div class="flex flex-wrap items-center gap-x-3 gap-y-1 text-label-sm text-on-surface-variant/60 mb-2">
-            
-            
-            <span>9 min read</span>
-            <span class="text-outline">·</span>
-            <span>Dr. Aris Vane</span>
-          </div>
-          <p class="text-on-surface-variant text-body-md line-clamp-2 mb-3">Stop relying on Google Scholar alone. How to find real primary sources, use academic databases effectively, and leverage AI without crossing ethical lines.</p>
-          <div class="flex flex-wrap gap-1.5 mt-2"><span class="text-label-sm text-primary/60">#The Survival Guide</span><span class="text-label-sm text-primary/60">#AI</span><span class="text-label-sm text-primary/60">#Research</span><span class="text-label-sm text-primary/60">#Data</span></div>
-        </div>
-      </a></div><section class="mt-16 mb-8 w-full bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-xl overflow-hidden">
+      </div>
+      <div class="text-center mt-8">
+        <a href="/author" class="inline-block bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20">Start Writing <span aria-hidden="true" class="material-symbols-outlined align-middle text-sm ml-1">arrow_forward</span></a>
+      </div>
+    </div>
+  </section><section class="mt-16 mb-8 w-full max-w-3xl mx-auto bg-gradient-to-r from-primary/5 to-secondary/5 border border-primary/20 rounded-xl overflow-hidden">
     <div class="flex flex-col md:flex-row items-center justify-between p-8 gap-6">
       <div class="flex-1">
         <span class="bg-primary/10 text-primary px-3 py-1 rounded-full text-label-sm uppercase tracking-widest font-bold">Newsletter</span>
@@ -393,7 +544,7 @@
       <a href="https://hustleledger.substack.com" target="_blank" class="bg-primary text-on-primary px-8 py-3.5 rounded-full text-label-sm font-bold hover:bg-primary-fixed-dim transition-all shadow-lg shadow-primary/20 whitespace-nowrap flex items-center gap-2">Subscribe Free <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span></a>
     </div>
   </section><!-- Sponsor Banner - below the fold -->
-<section class="mt-16 mb-8 w-full bg-surface-container-low border border-outline-variant/20 rounded-xl overflow-hidden p-4">
+<section class="mt-16 mb-8 w-full max-w-3xl mx-auto bg-surface-container-low border border-outline-variant/20 rounded-xl overflow-hidden p-4">
   <ins class="adsbygoogle"
        style="display:block; text-align:center;"
        data-ad-client="ca-pub-8802750792610728"
@@ -407,6 +558,13 @@
   var cards = [];
   var totalPosts = 6;
   document.querySelectorAll('#bentoGridInner > a').forEach(function(el) {
+    cards.push({
+      el: el,
+      title: (el.getAttribute('data-title') || '').toLowerCase(),
+      tags: (el.getAttribute('data-tags') || '').toLowerCase()
+    });
+  });
+  document.querySelectorAll('#latestCarousel a[data-slug]').forEach(function(el) {
     cards.push({
       el: el,
       title: (el.getAttribute('data-title') || '').toLowerCase(),
@@ -434,34 +592,16 @@
 </script>
   </main>
 
-  <!-- Desktop Footer -->
-  <footer class="hidden md:block w-full py-12 px-margin-desktop mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto items-center">
-      <div class="md:col-span-4">
-        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
-        <p class="text-on-surface-variant/70 text-body-md">&copy; 2026 HustleLedger Ecosystem. All rights reserved.</p>
+  <!-- Footer: slim centered one-liner -->
+  <footer class="w-full mt-auto py-3.5 px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-1 text-label-sm text-on-surface-variant/50">
+      <span>&copy; 2026 HustleLedger Ecosystem.</span>
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-1">
+        <a href="/about/" class="hover:text-primary transition-colors">About</a>
+        <a href="/authors/" class="hover:text-primary transition-colors">Authors</a>
+        <a href="/author" class="hover:text-primary transition-colors">Become an author</a>
+        <a href="https://hustleledger.substack.com" target="_blank" class="hover:text-primary transition-colors">Subscribe</a>
       </div>
-      <div class="md:col-span-8 flex flex-wrap justify-end gap-8">
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/posts/">Posts</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/tags/">Tags</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/categories/">Categories</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="https://hustleledger.substack.com" target="_blank">Subscribe</a>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Footer (compact) -->
-  <footer class="md:hidden w-full px-4 py-8 mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
-    <div class="text-center">
-      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
-      <div class="flex justify-center gap-4 mb-3">
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/posts/">Posts</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/tags/">Tags</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/categories/">Categories</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="https://hustleledger.substack.com" target="_blank">Subscribe</a>
-      </div>
-      <p class="text-on-surface-variant/50 text-body-md">&copy; 2026 HustleLedger Ecosystem</p>
     </div>
   </footer>
 
@@ -469,6 +609,96 @@
 
 
   <script>
+    // Menu toggle
+    (function() {
+      var toggle = document.getElementById('menuToggle');
+      var panel = document.getElementById('navPanel');
+      if (toggle && panel) {
+        toggle.addEventListener('click', function() {
+          var opened = panel.classList.toggle('hidden') === false;
+          toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+          toggle.setAttribute('aria-label', opened ? 'Close menu' : 'Open menu');
+        });
+        panel.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            panel.classList.add('hidden');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+
+    // Latest-posts slider — active card centered, neighbors peek at the edges, auto-advances
+    (function() {
+      var track = document.getElementById('latestTrack');
+      if (!track) return;
+      var wrapper = document.getElementById('latestCarousel');
+      var dotsWrap = document.getElementById('carouselDots');
+      var current = 0;
+      var timer = null;
+      var GAP = 24;
+      var DOT_INTERVAL = 5000;
+
+      function update() {
+        var n = track.children.length;
+        if (!n) return;
+        var slide = track.children[0];
+        var cw = wrapper ? wrapper.clientWidth : 0;
+        var sw = slide ? slide.offsetWidth : 0;
+        var offset = Math.max(8, (cw - sw) / 2);
+        track.style.transform = 'translateX(' + (offset - current * (sw + GAP)) + 'px)';
+        if (dotsWrap) {
+          for (var i = 0; i < dotsWrap.children.length; i++) {
+            var active = i === current;
+            dotsWrap.children[i].classList.toggle('active', active);
+            dotsWrap.children[i].setAttribute('aria-current', active ? 'true' : 'false');
+          }
+        }
+      }
+      function go(i) {
+        var n = track.children.length;
+        if (!n) return;
+        current = ((i % n) + n) % n;
+        update();
+      }
+      function next() { go(current + 1); }
+      function prev() { go(current - 1); }
+      function startAuto() { stopAuto(); timer = setInterval(next, DOT_INTERVAL); }
+      function stopAuto() { if (timer) { clearInterval(timer); timer = null; } }
+      function refreshDots() {
+        if (!dotsWrap) return;
+        while (dotsWrap.firstChild) dotsWrap.removeChild(dotsWrap.firstChild);
+        for (var i = 0; i < track.children.length; i++) {
+          (function(idx) {
+            var d = document.createElement('button');
+            d.type = 'button';
+            d.className = 'carousel-dot';
+            d.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+            d.addEventListener('click', function() { go(idx); startAuto(); });
+            dotsWrap.appendChild(d);
+          })(i);
+        }
+        update();
+      }
+      window.hlCarousel = { go: go, next: next, prev: prev, refreshDots: refreshDots, startAuto: startAuto, stopAuto: stopAuto };
+
+      document.querySelectorAll('[data-carousel-prev]').forEach(function(btn) {
+        btn.addEventListener('click', function() { prev(); startAuto(); });
+      });
+      document.querySelectorAll('[data-carousel-next]').forEach(function(btn) {
+        btn.addEventListener('click', function() { next(); startAuto(); });
+      });
+
+      if (wrapper) {
+        wrapper.addEventListener('mouseenter', stopAuto);
+        wrapper.addEventListener('mouseleave', startAuto);
+        window.addEventListener('resize', update);
+      }
+
+      refreshDots();
+      startAuto();
+    })();
+
     window.addEventListener('scroll', function() {
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -478,14 +708,14 @@
 
     // Client-side latest-posts.json fallback — shows posts published via proxy between full deploys
     (function() {
-      var grid = document.getElementById('bentoGridInner');
-      if (!grid) return;
+      var track = document.getElementById('latestTrack');
+      if (!track) return;
       fetch('/latest-posts.json')
         .then(function(r) { return r.json(); })
         .then(function(posts) {
           if (!posts || !posts.length) return;
           var existingSlugs = {};
-          grid.querySelectorAll('a[data-slug]').forEach(function(el) {
+          track.querySelectorAll('a[data-slug]').forEach(function(el) {
             existingSlugs[el.getAttribute('data-slug')] = true;
           });
           var newer = [];
@@ -493,27 +723,20 @@
             if (!existingSlugs[p.slug]) newer.push(p);
           });
           if (!newer.length) return;
-          var section = document.createElement('div');
-          section.className = 'mb-12';
-          var heading = document.createElement('h2');
-          heading.className = 'font-display text-headline-md text-on-surface mb-6';
-          heading.textContent = 'Just Published';
-          section.appendChild(heading);
-          var subGrid = document.createElement('div');
-          subGrid.className = 'grid grid-cols-1 md:grid-cols-12 gap-gutter';
-          newer.forEach(function(p) {
+          newer.slice(0, 4).forEach(function(p) {
             var a = document.createElement('a');
             a.href = '/posts/' + p.slug;
-            a.className = 'md:col-span-6 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block';
+            a.className = 'w-[320px] md:w-[384px] shrink-0 bg-surface-container border border-outline-variant/30 rounded-2xl overflow-hidden bento-glow bento-border group block';
+            a.setAttribute('data-slug', p.slug);
+            a.setAttribute('data-title', p.title || '');
             a.innerHTML = (p.og_image ? '<div class="aspect-video w-full overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + escAttr(p.og_image) + '" alt="' + escAttr(p.title) + '" loading="lazy"></div>' : '')
-              + '<div class="p-5"><h3 class="font-display text-headline-md mb-2 text-on-surface">' + escHtml(p.title) + '</h3>'
-              + '<div class="flex items-center gap-3 text-label-sm text-on-surface-variant/60 mb-2">' + (p.date ? '<span>' + p.date + '</span><span class="text-outline">·</span>' : '') + '<span>' + (p.read_time || '5 min') + ' read</span></div>'
-              + (p.description ? '<p class="text-on-surface-variant text-body-md line-clamp-2">' + escHtml(p.description) + '</p>' : '')
+              + '<div class="p-6 md:p-8"><h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2">' + escHtml(p.title) + '</h3>'
+              + '<div class="flex items-center gap-3 text-label-sm text-on-surface-variant/60">' + (p.date ? '<span>' + p.date + '</span><span class="text-outline">·</span>' : '') + '<span>' + (p.read_time || '5 min') + ' read</span></div>'
+              + (p.description ? '<p class="text-on-surface-variant text-body-md mt-2">' + escHtml(p.description) + '</p>' : '')
               + '</div>';
-            subGrid.appendChild(a);
+            track.appendChild(a);
           });
-          section.appendChild(subGrid);
-          grid.parentNode.insertBefore(section, grid);
+          if (window.hlCarousel) window.hlCarousel.refreshDots();
         }).catch(function() {});
     })();
 

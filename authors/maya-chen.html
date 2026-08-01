@@ -43,21 +43,21 @@
       '--hl-primary-fixed-dim:#E3B6FF;--hl-text-primary:#6F00CF;',
       '}',
       'html.dark{',
-      '--hl-on-background:#eadff0;--hl-surface-container-high:#2e2734;--hl-on-surface:#eadff0;',
+      '--hl-on-background:#e9e9ee;--hl-surface-container-high:#2c2c33;--hl-on-surface:#e9e9ee;',
       '--hl-on-primary-fixed:#2b0053;--hl-secondary-fixed:#4dffb2;--hl-primary-container:#8f00ff;',
-      '--hl-inverse-surface:#eadff0;--hl-on-tertiary-fixed:#321200;--hl-error-container:#93000a;',
-      '--hl-inverse-primary:#8600ef;--hl-on-secondary-container:#007149;--hl-surface:#181622;',
-      '--hl-outline:#988ca2;--hl-on-error-container:#ffdad6;--hl-on-error:#690005;',
-      '--hl-on-tertiary-container:#ffddcb;--hl-surface-container-low:#1e1b24;--hl-background:#181622;',
+      '--hl-inverse-surface:#e9e9ee;--hl-on-tertiary-fixed:#321200;--hl-error-container:#93000a;',
+      '--hl-inverse-primary:#8600ef;--hl-on-secondary-container:#007149;--hl-surface:#212126;',
+      '--hl-outline:#63636b;--hl-on-error-container:#ffdad6;--hl-on-error:#690005;',
+      '--hl-on-tertiary-container:#ffddcb;--hl-surface-container-low:#27272d;--hl-background:#212126;',
       '--hl-on-primary:#ffffff;--hl-secondary:#00FFAB;--hl-error:#ffb4ab;--hl-surface-tint:#dab9ff;',
-      '--hl-on-secondary:#003822;--hl-surface-container-highest:#2d2836;--hl-secondary-fixed-dim:#00e297;',
-      '--hl-on-tertiary-fixed-variant:#753400;--hl-primary:#8F00FF;--hl-surface-dim:#181622;',
-      '--hl-inverse-on-surface:#342e3b;--hl-tertiary-fixed:#ffdbc8;--hl-surface-container:#1e1c26;',
+      '--hl-on-secondary:#003822;--hl-surface-container-highest:#33333b;--hl-secondary-fixed-dim:#00e297;',
+      '--hl-on-tertiary-fixed-variant:#753400;--hl-primary:#8F00FF;--hl-surface-dim:#212126;',
+      '--hl-inverse-on-surface:#3b3b43;--hl-tertiary-fixed:#ffdbc8;--hl-surface-container:#2a2a31;',
       '--hl-on-primary-fixed-variant:#6500b8;--hl-primary-fixed:#efdbff;--hl-on-secondary-fixed-variant:#005234;',
-      '--hl-tertiary:#ffb68b;--hl-surface-container-lowest:#100e15;--hl-surface-bright:#3d3744;',
-      '--hl-tertiary-container:#a44c00;--hl-secondary-container:#00FFAB;--hl-surface-variant:#2d2836;',
-      '--hl-on-tertiary:#522300;--hl-tertiary-fixed-dim:#ffb68b;--hl-outline-variant:#4d4356;',
-      '--hl-on-secondary-fixed:#002112;--hl-on-surface-variant:#cfc2d9;--hl-on-primary-container:#efddff;',
+      '--hl-tertiary:#ffb68b;--hl-surface-container-lowest:#1a1a1f;--hl-surface-bright:#43434c;',
+      '--hl-tertiary-container:#a44c00;--hl-secondary-container:#00FFAB;--hl-surface-variant:#2f2f37;',
+      '--hl-on-tertiary:#522300;--hl-tertiary-fixed-dim:#ffb68b;--hl-outline-variant:#38383f;',
+      '--hl-on-secondary-fixed:#002112;--hl-on-surface-variant:#c6c5cc;--hl-on-primary-container:#efddff;',
       '--hl-primary-fixed-dim:#dab9ff;--hl-text-primary:#c47fff;',
       '}'
     ].join('\n');
@@ -164,8 +164,8 @@
     body .text-primary, body .text-primary\/30, body .text-primary\/60 { color: var(--hl-text-primary); }
     body .hover\:text-primary:hover { color: var(--hl-text-primary); }
     body .group:hover .group-hover\:text-primary { color: var(--hl-text-primary); }
-    .bento-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 15%, transparent); }
-    .bento-card-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 10%, transparent); }
+    .bento-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 8%, transparent); }
+    .bento-card-glow { box-shadow: 0px 4px 20px color-mix(in srgb, var(--hl-primary) 5%, transparent); }
     .bento-border { border-top: 1px solid var(--hl-outline-variant); }
     .active-glow { box-shadow: 0px 0px 15px color-mix(in srgb, var(--hl-secondary) 40%, transparent); }
     .neon-border-gradient {
@@ -175,6 +175,95 @@
     }
     .no-scrollbar::-webkit-scrollbar { display: none; }
     .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .carousel-dot { width: 0.625rem; height: 0.625rem; border-radius: 9999px; background: color-mix(in srgb, var(--hl-outline-variant) 60%, transparent); transition: all 0.3s ease; }
+    .carousel-dot:hover { background: color-mix(in srgb, var(--hl-primary) 60%, transparent); }
+    .carousel-dot.active { width: 1.5rem; background: var(--hl-text-primary); }
+    html.dark { color-scheme: dark; }
+    /* The Tailwind CDN does not generate opacity utilities for colors defined
+       as var() (border-outline-variant/30 etc.), so those borders fall back to
+       Tailwind's near-white default. Pin the intended final colors explicitly. */
+    .border-outline-variant\/10 { border-color: #efeaf4; }
+    .border-outline-variant\/20 { border-color: #e9e3f0; }
+    .border-outline-variant\/30 { border-color: #e2dce9; }
+    .border-outline-variant\/40 { border-color: #dbd4e2; }
+    .border-outline-variant\/50 { border-color: #d4cce0; }
+    html.dark .border-outline-variant\/10 { border-color: #2e2e35; }
+    html.dark .border-outline-variant\/20 { border-color: #34343c; }
+    html.dark .border-outline-variant\/30 { border-color: #3a3a42; }
+    html.dark .border-outline-variant\/40 { border-color: #41414a; }
+    html.dark .border-outline-variant\/50 { border-color: #484851; }
+    .border-primary\/20 { border-color: #e5c6ff; }
+    .border-primary\/30 { border-color: #dbadff; }
+    .border-primary\/40 { border-color: #d094ff; }
+    .border-primary\/50 { border-color: #c57cff; }
+    .border-primary\/60 { border-color: #ba63ff; }
+    html.dark .border-primary\/20 { border-color: #371a51; }
+    html.dark .border-primary\/30 { border-color: #421767; }
+    html.dark .border-primary\/40 { border-color: #4d147d; }
+    html.dark .border-primary\/50 { border-color: #581092; }
+    html.dark .border-primary\/60 { border-color: #630da8; }
+    .hover\:border-primary\/40:hover, .hover\:border-primary\/50:hover, .hover\:border-primary\/60:hover { border-color: #6f00cf; }
+    html.dark .hover\:border-primary\/40:hover, html.dark .hover\:border-primary\/50:hover, html.dark .hover\:border-primary\/60:hover { border-color: #c47fff; }
+    .focus\:border-primary\/50:focus { border-color: #6f00cf; }
+    html.dark .focus\:border-primary\/50:focus { border-color: #c47fff; }
+    .bg-primary\/10 { background-color: #e5d3f4; }
+    .bg-primary\/15 { background-color: #e1c8f5; }
+    .bg-primary\/20 { background-color: #dcbcf5; }
+    .bg-primary\/30 { background-color: #d2a5f7; }
+    html.dark .bg-primary\/10 { background-color: #342646; }
+    html.dark .bg-primary\/15 { background-color: #392450; }
+    html.dark .bg-primary\/20 { background-color: #3e225a; }
+    html.dark .bg-primary\/30 { background-color: #481d6f; }
+    .from-primary\/5 {
+      --tw-gradient-from: #eadff4 var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(234 223 244 / 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    .to-secondary\/5 { --tw-gradient-to: #e3ecef var(--tw-gradient-to-position); }
+    html.dark .from-primary\/5 {
+      --tw-gradient-from: #2f283b var(--tw-gradient-from-position);
+      --tw-gradient-to: rgb(47 40 59 / 0) var(--tw-gradient-to-position);
+      --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    html.dark .to-secondary\/5 { --tw-gradient-to: #283537 var(--tw-gradient-to-position); }
+    .text-on-surface-variant\/30 { color: #c4c0c9; }
+    .text-on-surface-variant\/40 { color: #b2adb7; }
+    .text-on-surface-variant\/50 { color: #a09aa6; }
+    .text-on-surface-variant\/60 { color: #8d8894; }
+    .text-on-surface-variant\/70 { color: #7b7682; }
+    html.dark .text-on-surface-variant\/30 { color: #535258; }
+    html.dark .text-on-surface-variant\/40 { color: #636368; }
+    html.dark .text-on-surface-variant\/50 { color: #737379; }
+    html.dark .text-on-surface-variant\/60 { color: #84838a; }
+    html.dark .text-on-surface-variant\/70 { color: #94949a; }
+    .placeholder\:text-on-surface-variant\/40::placeholder { color: #b2adb7; }
+    html.dark .placeholder\:text-on-surface-variant\/40::placeholder { color: #636368; }
+    .shadow-primary\/5 { box-shadow: 0 10px 15px -3px rgb(143 0 255 / 0.05), 0 4px 6px -4px rgb(143 0 255 / 0.05); }
+    .shadow-primary\/10 { box-shadow: 0 4px 20px rgb(143 0 255 / 0.10); }
+    .shadow-primary\/20 { box-shadow: 0 10px 15px -3px rgb(143 0 255 / 0.20), 0 4px 6px -4px rgb(143 0 255 / 0.20); }
+    html.dark .shadow-primary\/5 { box-shadow: 0 10px 15px -3px rgb(196 127 255 / 0.07), 0 4px 6px -4px rgb(196 127 255 / 0.07); }
+    html.dark .shadow-primary\/10 { box-shadow: 0 4px 20px rgb(196 127 255 / 0.12); }
+    html.dark .shadow-primary\/20 { box-shadow: 0 10px 15px -3px rgb(196 127 255 / 0.25), 0 4px 6px -4px rgb(196 127 255 / 0.25); }
+    .focus\:ring-primary\/20:focus { box-shadow: 0 0 0 2px rgb(143 0 255 / 0.20); }
+    html.dark .focus\:ring-primary\/20:focus { box-shadow: 0 0 0 2px rgb(196 127 255 / 0.20); }
+    .border-error\/30 { border-color: #dfacb2; }
+    html.dark .border-error\/30 { border-color: #624a4e; }
+    .bg-error\/10 { background-color: #ead6dd; }
+    .bg-error\/20 { background-color: #e4c1c8; }
+    html.dark .bg-error\/10 { background-color: #342b33; }
+    html.dark .bg-error\/20 { background-color: #4b3a41; }
+    .text-error\/50 { color: #db898d; }
+    .text-error\/60 { color: #d47276; }
+    .text-error\/80 { color: #c74648; }
+    html.dark .text-error\/50 { color: #8c6567; }
+    html.dark .text-error\/60 { color: #a37574; }
+    html.dark .text-error\/80 { color: #d19490; }
+    .bg-secondary-container\/20 { background-color: #e3eced; }
+    .bg-secondary-container\/30 { background-color: #ddedea; }
+    html.dark .bg-secondary-container\/20 { background-color: #184941; }
+    html.dark .bg-secondary-container\/30 { background-color: #15604e; }
+    .bg-surface\/80 { background-color: #f9f5fd; }
+    html.dark .bg-surface\/80 { background-color: #191723; }
     .reading-progress-container { position: fixed; top: 0; left: 0; width: 100%; height: 4px; z-index: 100; background: color-mix(in srgb, var(--hl-outline) 20%, transparent); }
     .reading-progress-bar { height: 100%; width: 0%; background: var(--hl-primary); box-shadow: 0 0 10px var(--hl-primary); transition: width 0.1s linear; }
     .ad-min-height { min-height: 90px; }
@@ -219,32 +308,37 @@
     <div class="reading-progress-bar" id="progressBar"></div>
   </div>
 
-  <!-- Desktop Header -->
-  <header class="hidden md:block bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
-    <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-desktop py-4 max-w-container-max mx-auto gap-4">
-      <div class="flex items-center gap-8 w-full md:w-auto">
-        <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] whitespace-nowrap flex items-center gap-2"><svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
-        <nav class="hidden lg:flex items-center gap-6">
-          <a href="/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Home</a>
-          <a href="/posts/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Posts</a>
-          <a href="/tags/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Tags</a>
-          <a href="/categories/" class="text-label-sm text-on-surface-variant/70 hover:text-primary transition-colors uppercase tracking-widest font-bold">Categories</a>
-          <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-4 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all uppercase tracking-widest font-bold">Subscribe</a>
+  <!-- Header: transparent, logo left + menu button right -->
+  <header class="relative z-50">
+    <div class="flex items-center justify-between w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-5">
+      <a href="/" class="font-display text-headline-md font-bold text-primary whitespace-nowrap flex items-center gap-2.5" aria-label="HustleLedger home">
+        <svg class="w-7 h-7" viewBox="0 0 100 100" fill="none" aria-hidden="true">
+          <g style="fill:var(--hl-text-primary)">
+            <rect x="24" y="30" width="16" height="48" rx="4"/>
+            <rect x="58" y="16" width="16" height="62" rx="4"/>
+            <polygon points="40,58 40,44 58,26 58,40"/>
+          </g>
+        </svg>
+        HustleLedger
+      </a>
+      <div class="relative">
+        <button id="menuToggle" type="button" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu" class="w-10 h-10 rounded-full border border-outline-variant/40 flex items-center justify-center hover:border-primary/50 hover:bg-surface-container transition-all">
+          <span aria-hidden="true" class="material-symbols-outlined text-primary">menu</span>
+        </button>
+        <nav id="navPanel" class="hidden absolute right-0 top-12 w-56 rounded-xl bg-surface-container border border-outline-variant/30 shadow-lg shadow-primary/10 py-2 z-50">
+          <a href="/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Home</a>
+          <a href="/posts/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Posts</a>
+          <a href="/tags/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Tags</a>
+          <a href="/categories/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Categories</a>
+          <a href="/about/" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">About</a>
+          <a href="/author" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Become an Author</a>
+          <a href="https://hustleledger.substack.com" target="_blank" class="block px-4 py-2.5 text-label-sm font-bold uppercase tracking-widest text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors">Subscribe</a>
         </nav>
       </div>
-
     </div>
   </header>
 
-  <!-- Mobile Header (simplified) -->
-  <header class="md:hidden bg-surface/80 backdrop-blur-xl sticky top-0 z-50 border-b border-outline-variant/20 shadow-[0_4px_20px_rgba(143,0,255,0.1)]">
-    <div class="flex justify-between items-center w-full px-4 py-4 max-w-container-max mx-auto">
-      <a href="/" class="font-display text-headline-md font-bold text-primary drop-shadow-[0_0_8px_rgba(143,0,255,0.5)] flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</a>
-      <a href="https://hustleledger.substack.com" target="_blank" class="text-label-sm bg-primary text-on-primary px-3 py-1.5 rounded-full hover:bg-primary-fixed-dim transition-all">Subscribe</a>
-    </div>
-  </header>
-
-  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-6 md:py-12">
+  <main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-8 md:py-16">
     <section class="mb-12">
     <div class="flex items-center gap-4 mb-4">
       <div class="w-16 h-16 rounded-full overflow-hidden border-2 border-primary bg-surface-container-highest flex items-center justify-center">
@@ -295,34 +389,16 @@
       </a></div>
   </main>
 
-  <!-- Desktop Footer -->
-  <footer class="hidden md:block w-full py-12 px-margin-desktop mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter max-w-container-max mx-auto items-center">
-      <div class="md:col-span-4">
-        <div class="font-display text-headline-md text-primary mb-2 flex items-center gap-2"><svg class="w-6 h-6" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
-        <p class="text-on-surface-variant/70 text-body-md">&copy; 2026 HustleLedger Ecosystem. All rights reserved.</p>
+  <!-- Footer: slim centered one-liner -->
+  <footer class="w-full mt-auto py-3.5 px-margin-mobile md:px-margin-desktop">
+    <div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center justify-center gap-x-4 gap-y-1 text-label-sm text-on-surface-variant/50">
+      <span>&copy; 2026 HustleLedger Ecosystem.</span>
+      <div class="flex flex-wrap justify-center gap-x-4 gap-y-1">
+        <a href="/about/" class="hover:text-primary transition-colors">About</a>
+        <a href="/authors/" class="hover:text-primary transition-colors">Authors</a>
+        <a href="/author" class="hover:text-primary transition-colors">Become an author</a>
+        <a href="https://hustleledger.substack.com" target="_blank" class="hover:text-primary transition-colors">Subscribe</a>
       </div>
-      <div class="md:col-span-8 flex flex-wrap justify-end gap-8">
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/posts/">Posts</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/tags/">Tags</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="/categories/">Categories</a>
-        <a class="text-on-surface-variant/70 hover:text-primary transition-colors text-body-md" href="https://hustleledger.substack.com" target="_blank">Subscribe</a>
-
-      </div>
-    </div>
-  </footer>
-
-  <!-- Mobile Footer (compact) -->
-  <footer class="md:hidden w-full px-4 py-8 mt-auto bg-surface-container-lowest border-t border-outline-variant/30">
-    <div class="text-center">
-      <div class="font-display text-headline-md text-primary mb-2 flex items-center justify-center gap-2"><svg class="w-5 h-5" viewBox="0 0 100 100" fill="none" aria-hidden="true"><rect width="100" height="100" rx="22" fill="#1a1723"/><g fill="#eadff0"><rect x="24" y="30" width="16" height="48" rx="4"/><rect x="58" y="16" width="16" height="62" rx="4"/><polygon points="40,58 40,44 58,26 58,40"/></g></svg>HustleLedger</div>
-      <div class="flex justify-center gap-4 mb-3">
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/posts/">Posts</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/tags/">Tags</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="/categories/">Categories</a>
-        <a class="text-on-surface-variant/50 hover:text-primary transition-colors text-label-sm" href="https://hustleledger.substack.com" target="_blank">Subscribe</a>
-      </div>
-      <p class="text-on-surface-variant/50 text-body-md">&copy; 2026 HustleLedger Ecosystem</p>
     </div>
   </footer>
 
@@ -330,6 +406,96 @@
 
 
   <script>
+    // Menu toggle
+    (function() {
+      var toggle = document.getElementById('menuToggle');
+      var panel = document.getElementById('navPanel');
+      if (toggle && panel) {
+        toggle.addEventListener('click', function() {
+          var opened = panel.classList.toggle('hidden') === false;
+          toggle.setAttribute('aria-expanded', opened ? 'true' : 'false');
+          toggle.setAttribute('aria-label', opened ? 'Close menu' : 'Open menu');
+        });
+        panel.querySelectorAll('a').forEach(function(a) {
+          a.addEventListener('click', function() {
+            panel.classList.add('hidden');
+            toggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+    })();
+
+    // Latest-posts slider — active card centered, neighbors peek at the edges, auto-advances
+    (function() {
+      var track = document.getElementById('latestTrack');
+      if (!track) return;
+      var wrapper = document.getElementById('latestCarousel');
+      var dotsWrap = document.getElementById('carouselDots');
+      var current = 0;
+      var timer = null;
+      var GAP = 24;
+      var DOT_INTERVAL = 5000;
+
+      function update() {
+        var n = track.children.length;
+        if (!n) return;
+        var slide = track.children[0];
+        var cw = wrapper ? wrapper.clientWidth : 0;
+        var sw = slide ? slide.offsetWidth : 0;
+        var offset = Math.max(8, (cw - sw) / 2);
+        track.style.transform = 'translateX(' + (offset - current * (sw + GAP)) + 'px)';
+        if (dotsWrap) {
+          for (var i = 0; i < dotsWrap.children.length; i++) {
+            var active = i === current;
+            dotsWrap.children[i].classList.toggle('active', active);
+            dotsWrap.children[i].setAttribute('aria-current', active ? 'true' : 'false');
+          }
+        }
+      }
+      function go(i) {
+        var n = track.children.length;
+        if (!n) return;
+        current = ((i % n) + n) % n;
+        update();
+      }
+      function next() { go(current + 1); }
+      function prev() { go(current - 1); }
+      function startAuto() { stopAuto(); timer = setInterval(next, DOT_INTERVAL); }
+      function stopAuto() { if (timer) { clearInterval(timer); timer = null; } }
+      function refreshDots() {
+        if (!dotsWrap) return;
+        while (dotsWrap.firstChild) dotsWrap.removeChild(dotsWrap.firstChild);
+        for (var i = 0; i < track.children.length; i++) {
+          (function(idx) {
+            var d = document.createElement('button');
+            d.type = 'button';
+            d.className = 'carousel-dot';
+            d.setAttribute('aria-label', 'Go to slide ' + (idx + 1));
+            d.addEventListener('click', function() { go(idx); startAuto(); });
+            dotsWrap.appendChild(d);
+          })(i);
+        }
+        update();
+      }
+      window.hlCarousel = { go: go, next: next, prev: prev, refreshDots: refreshDots, startAuto: startAuto, stopAuto: stopAuto };
+
+      document.querySelectorAll('[data-carousel-prev]').forEach(function(btn) {
+        btn.addEventListener('click', function() { prev(); startAuto(); });
+      });
+      document.querySelectorAll('[data-carousel-next]').forEach(function(btn) {
+        btn.addEventListener('click', function() { next(); startAuto(); });
+      });
+
+      if (wrapper) {
+        wrapper.addEventListener('mouseenter', stopAuto);
+        wrapper.addEventListener('mouseleave', startAuto);
+        window.addEventListener('resize', update);
+      }
+
+      refreshDots();
+      startAuto();
+    })();
+
     window.addEventListener('scroll', function() {
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -339,14 +505,14 @@
 
     // Client-side latest-posts.json fallback — shows posts published via proxy between full deploys
     (function() {
-      var grid = document.getElementById('bentoGridInner');
-      if (!grid) return;
+      var track = document.getElementById('latestTrack');
+      if (!track) return;
       fetch('/latest-posts.json')
         .then(function(r) { return r.json(); })
         .then(function(posts) {
           if (!posts || !posts.length) return;
           var existingSlugs = {};
-          grid.querySelectorAll('a[data-slug]').forEach(function(el) {
+          track.querySelectorAll('a[data-slug]').forEach(function(el) {
             existingSlugs[el.getAttribute('data-slug')] = true;
           });
           var newer = [];
@@ -354,27 +520,20 @@
             if (!existingSlugs[p.slug]) newer.push(p);
           });
           if (!newer.length) return;
-          var section = document.createElement('div');
-          section.className = 'mb-12';
-          var heading = document.createElement('h2');
-          heading.className = 'font-display text-headline-md text-on-surface mb-6';
-          heading.textContent = 'Just Published';
-          section.appendChild(heading);
-          var subGrid = document.createElement('div');
-          subGrid.className = 'grid grid-cols-1 md:grid-cols-12 gap-gutter';
-          newer.forEach(function(p) {
+          newer.slice(0, 4).forEach(function(p) {
             var a = document.createElement('a');
             a.href = '/posts/' + p.slug;
-            a.className = 'md:col-span-6 bg-surface-container border border-outline-variant/30 rounded-xl overflow-hidden bento-glow bento-border group block';
+            a.className = 'w-[320px] md:w-[384px] shrink-0 bg-surface-container border border-outline-variant/30 rounded-2xl overflow-hidden bento-glow bento-border group block';
+            a.setAttribute('data-slug', p.slug);
+            a.setAttribute('data-title', p.title || '');
             a.innerHTML = (p.og_image ? '<div class="aspect-video w-full overflow-hidden"><img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" src="' + escAttr(p.og_image) + '" alt="' + escAttr(p.title) + '" loading="lazy"></div>' : '')
-              + '<div class="p-5"><h3 class="font-display text-headline-md mb-2 text-on-surface">' + escHtml(p.title) + '</h3>'
-              + '<div class="flex items-center gap-3 text-label-sm text-on-surface-variant/60 mb-2">' + (p.date ? '<span>' + p.date + '</span><span class="text-outline">·</span>' : '') + '<span>' + (p.read_time || '5 min') + ' read</span></div>'
-              + (p.description ? '<p class="text-on-surface-variant text-body-md line-clamp-2">' + escHtml(p.description) + '</p>' : '')
+              + '<div class="p-6 md:p-8"><h3 class="font-display text-headline-md font-bold text-on-surface mb-2 line-clamp-2">' + escHtml(p.title) + '</h3>'
+              + '<div class="flex items-center gap-3 text-label-sm text-on-surface-variant/60">' + (p.date ? '<span>' + p.date + '</span><span class="text-outline">·</span>' : '') + '<span>' + (p.read_time || '5 min') + ' read</span></div>'
+              + (p.description ? '<p class="text-on-surface-variant text-body-md mt-2">' + escHtml(p.description) + '</p>' : '')
               + '</div>';
-            subGrid.appendChild(a);
+            track.appendChild(a);
           });
-          section.appendChild(subGrid);
-          grid.parentNode.insertBefore(section, grid);
+          if (window.hlCarousel) window.hlCarousel.refreshDots();
         }).catch(function() {});
     })();
 
